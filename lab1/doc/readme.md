@@ -12,6 +12,27 @@ Based on the methodology, we split them into two groups:
 
 ## A query-driven method
 
+We can regard cardinality estimation as a regression problem. Consider table `t` with columns `c1, c2, ..., cn`. For a query `select * from t where c1 > l1 and c1 < r1 and c1 > l2 and c2 < r2 and ... and cn > ln and cn < rn`, we want to predict how many rows left after being filtered by predicates. We extract features from predicates as follows:
+```
+[l1, r1, l2, r2, ..., ln, rn]
+```
+Besides, there are several heuristic methods which use information from single column histograms to produce selectivity estimates for conjunction of predicates:
+- Attribute Value Independence (AVI): It assumes values for different attributes were chosen independent of each other. Under this assumption, the combined selectivity fraction for predicates on n columns is calculated as `s1 x s2 x ... x sn` where `si` is the selectivity of the i-th column.
+- Exponential BackOff (EBO): When columns have correlated values, AVI could cause significant underestimations. EBO calculates the combined selectivity by using only 4 most selective predicates with diminishing impact. The combined selectivity fraction is given by `s_{1} x s_{2}^{1/2} x s_{3}^{1/4} x s_{4}^{1/8}` where `s_{k}` represents k-th most selective fraction across all predicates.
+- Minimum Selectivity (MinSel): It calculates the combined selectivity as the minimum selectivity across individual predicates. 
+
+For a given conjunction of predicates, the combined actual selectivity depends on the degree of correlation among the predicates. AVI would produce good estimates if the predicates have no correlation while MinSel represents the other extreme compared to AVI. EBO is expected to capture some intermediate scenarios between complete independenceand full correlation. We add the estimated produced by the three heuristic methods into the features of the regression model:
+```
+[l1, r1, l2, r2, ..., ln, rn, est_avi, est_ebo, est_min_sel]
+```
+which can improve the accuracy and robustness of the regression model.
+
+We can use the regression models such as Multilayer Perceptron (MLP), Gradient Boosting Decision Tree (GBDT) and so on. As for loss function, since we hope to minimize relative error between the estimated rows and the actual rows, we can apply log-transform to the actual rows when generating labels and use the following loss function:
+```
+loss = MSE(log(act_rows) - log(est_rows)) = MSE(log(act_rows / est_rows)) = MSE(q-error)
+```
+where `q-error = max(act_rows / est_rows, est_rows / act_rows)`, which is a common metric for cardinality estimation.
+
 ## A data-driven method
 We use sum-product networks(SPN) here to learn the joint probability distribution of our data. It can capture correlation between multiple columns.
 
