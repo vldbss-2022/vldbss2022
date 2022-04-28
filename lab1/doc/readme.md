@@ -15,7 +15,7 @@ Based on the methodology, we split them into two groups:
 ## A data-driven method
 We use sum-product networks(SPN) here to learn the joint probability distribution of our data. It can capture correlation between multiple columns.
 
-Intuitively, sum nodes split rows and product nodes split columns. Leaf nodes represent a single column and in our lab we use histograms for it. For instance, in the picture below, an SPN was learned over the column `region` and `age` of the customer table.
+Intuitively, sum nodes split rows and product nodes split columns. Leaf nodes represent a single column. For instance, in the picture below, an SPN was learned over the column `region` and `age` of the customer table.
 
 +  The top sum node splits the data into two groups, and the left group contains 30% rows, which is dominated by older European customers, and the right group contains 70% rows with younger Asian customers.
 +  Then next in both groups, `region` and `age` are split by a product node each. 
@@ -47,9 +47,9 @@ In this lab, we use `IMDB.title` to train and test our models. All data is in `d
 
 For simplicity, all queries we used in lab1 are well formatted range queries with the same pattern `select * from imdb.title where c1>? and c1<? and c2>? and c2<? and ...`.
 
-And all columns that appear in our queries are int column, more specifically, you can only consider `kind_id`, `production_year`, `imdb_id`, `episode_of_id`, `season_nr`, `episode_nr` columns in lab1.
+And all columns that appear in our queries are INT column, more specifically, you can only consider `kind_id`, `production_year`, `imdb_id`, `episode_of_id`, `season_nr`, `episode_nr` columns in lab1.
 
-These files are expected to be used as below:
+These files are supposed to be used as below:
 
 ![input](input.png)
 
