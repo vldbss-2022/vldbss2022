@@ -6,7 +6,7 @@ Query optimizers depend on cardinality estimates of query predicates to produce 
 Based on the methodology, we split them into two groups:
 
 + query-driven methods: they model cardinality estimation as a regression problem and aim to build a mapping between queries and the estimation results via feature vectors.
-+ data-driven methods: they model cardinality estimation as a joint probability distribution estimation problem and aim to construct the joint distribution from the table.
++ data-driven methods: they model cardinality estimation as a joint probability distribution estimation problem and aim to construct the joint distribution from the table data.
 
 ![methods](learning-based-methods.png)
 
