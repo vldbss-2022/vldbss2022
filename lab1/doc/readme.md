@@ -59,7 +59,7 @@ In `range_query.py`, we've implemented some functions that can help you parse ra
 
 In `statistics.py`, we've implemented some structure related to statistics. `TableStats` is the abstraction of a table's statistics, which consists of multiple columns. A column's statistics is stored in a `Histogram` and a `TopN`, and they can do estimation for single-column predicates well. For multi-column predicates estimation, some estimators based on different strategies(AVI, ExpBackOff and MinSel) can be used.
 
-You need to fill some missing code in `learn_from_query.py`, `learn_from_data.py` and `statistics.py`. Missing code is marked with `assert (YOUR CODE HERE)`.
+You need to fill some missing code in `learn_from_query.py`, `learn_from_data.py` and `statistics.py`. Missing code is marked with comment `YOUR CODE HERE`.
 
 After you fill all missing code, you can run `python evaluation.py` and it will test your models and generate a report under `eval` directory.
 
