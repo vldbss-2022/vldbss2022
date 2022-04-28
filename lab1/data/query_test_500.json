@@ -1,0 +1,2002 @@
+[
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5 ",
+		"act_rows": 944343
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e435314 and episode_of_id\u003c1759981  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e332 and episode_nr\u003c460 ",
+		"act_rows": 3892
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e3285 and episode_of_id\u003c1574381  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1031521
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1989 and production_year\u003c2018  and episode_nr\u003e147 and episode_nr\u003c189 ",
+		"act_rows": 15895
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e159 and episode_nr\u003c417 ",
+		"act_rows": 38977
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1923 and production_year\u003c2006  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 545504
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1441258 and episode_of_id\u003c2124252  and season_nr\u003e5 and season_nr\u003c54 ",
+		"act_rows": 21226
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1905 and production_year\u003c2019  and episode_nr\u003e14 and episode_nr\u003c41 ",
+		"act_rows": 207768
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1963 and production_year\u003c1985 ",
+		"act_rows": 291358
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1922 and production_year\u003c1925 ",
+		"act_rows": 5075
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e399580 and episode_of_id\u003c1010475  and season_nr\u003e2 and season_nr\u003c59 ",
+		"act_rows": 114935
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e611312 and episode_of_id\u003c2454044  and season_nr\u003e26 and season_nr\u003c32 ",
+		"act_rows": 4144
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1999 and production_year\u003c2006 ",
+		"act_rows": 412594
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e80 and episode_nr\u003c375 ",
+		"act_rows": 102083
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e2000 and production_year\u003c2002  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 38974
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1922 and production_year\u003c2016  and episode_of_id\u003e1013355 and episode_of_id\u003c2456859  and season_nr\u003e12 and season_nr\u003c52 ",
+		"act_rows": 24843
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e8 and season_nr\u003c48 ",
+		"act_rows": 94004
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1410483 and episode_of_id\u003c2460891  and season_nr\u003e11 and season_nr\u003c38 ",
+		"act_rows": 11386
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1923 and production_year\u003c1970  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e14 and season_nr\u003c44 ",
+		"act_rows": 756
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1911 and production_year\u003c1945 ",
+		"act_rows": 112881
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4 ",
+		"act_rows": 829121
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1909 and production_year\u003c2010  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 775918
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e241992 and episode_of_id\u003c2398651 ",
+		"act_rows": 1285211
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e53 and season_nr\u003c59  and episode_nr\u003e158 and episode_nr\u003c297 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e175122 and episode_of_id\u003c2373006  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 855509
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e114 and episode_nr\u003c276 ",
+		"act_rows": 58259
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c3  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1956 and production_year\u003c2014  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 995568
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e805180 and episode_of_id\u003c1912378  and episode_nr\u003e298 and episode_nr\u003c487 ",
+		"act_rows": 4492
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1906 and production_year\u003c2010  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 775918
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e218 and episode_nr\u003c305 ",
+		"act_rows": 10237
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e197 and episode_nr\u003c458 ",
+		"act_rows": 24283
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e1 and season_nr\u003c59 ",
+		"act_rows": 496849
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e45 and episode_nr\u003c452 ",
+		"act_rows": 162066
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e107 and episode_nr\u003c231 ",
+		"act_rows": 61759
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and production_year\u003e1929 and production_year\u003c1933 ",
+		"act_rows": 7414
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4 ",
+		"act_rows": 829121
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5 ",
+		"act_rows": 944343
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1925 and production_year\u003c1992 ",
+		"act_rows": 610375
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2008 ",
+		"act_rows": 1622464
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e44954 and episode_of_id\u003c1348308  and season_nr\u003e42 and season_nr\u003c58 ",
+		"act_rows": 2498
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e3 and kind_id\u003c5  and production_year\u003e1924 and production_year\u003c1964 ",
+		"act_rows": 2
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1910 and production_year\u003c1947  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 72
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e159 and episode_nr\u003c181 ",
+		"act_rows": 9968
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c58 ",
+		"act_rows": 1072434
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e10 and season_nr\u003c58 ",
+		"act_rows": 74152
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c3  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 88807
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e7 and season_nr\u003c56 ",
+		"act_rows": 113863
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e170877 and episode_of_id\u003c1919426  and episode_nr\u003e182 and episode_nr\u003c373 ",
+		"act_rows": 24567
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1907 and production_year\u003c1952  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 4699
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e173793 and episode_of_id\u003c488682  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 198797
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1376075 and episode_of_id\u003c1440395 ",
+		"act_rows": 60439
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1915 and production_year\u003c2000  and episode_nr\u003e63 and episode_nr\u003c474 ",
+		"act_rows": 38157
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5 ",
+		"act_rows": 944343
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e15 and season_nr\u003c46 ",
+		"act_rows": 40009
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and production_year\u003e1982 and production_year\u003c2000 ",
+		"act_rows": 137322
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e42 and episode_nr\u003c55 ",
+		"act_rows": 28757
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e113 and episode_nr\u003c309 ",
+		"act_rows": 65603
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e70 and episode_nr\u003c400 ",
+		"act_rows": 115419
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1915 and production_year\u003c1965  and episode_of_id\u003e71114 and episode_of_id\u003c2323941  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 63495
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c42 ",
+		"act_rows": 1069364
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1902 and production_year\u003c1986 ",
+		"act_rows": 575593
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5 ",
+		"act_rows": 944343
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e266 and episode_nr\u003c349 ",
+		"act_rows": 6608
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e180 and episode_nr\u003c499 ",
+		"act_rows": 31814
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e217 and episode_nr\u003c439 ",
+		"act_rows": 16237
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e1 and season_nr\u003c58  and episode_nr\u003e1 and episode_nr\u003c483 ",
+		"act_rows": 465826
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e807962 and episode_of_id\u003c2321802  and season_nr\u003e7 and season_nr\u003c25 ",
+		"act_rows": 50306
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e97223 and episode_of_id\u003c2403351 ",
+		"act_rows": 1357933
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1952 and production_year\u003c1986 ",
+		"act_rows": 411255
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e29 and episode_nr\u003c40 ",
+		"act_rows": 44820
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e480400 and episode_of_id\u003c1489378  and season_nr\u003e4 and season_nr\u003c6 ",
+		"act_rows": 24929
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003733
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1998 and production_year\u003c2018  and episode_nr\u003e3 and episode_nr\u003c16 ",
+		"act_rows": 265631
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 300644
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e707904 and episode_of_id\u003c837291  and season_nr\u003e15 and season_nr\u003c25 ",
+		"act_rows": 1818
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e901842 and episode_of_id\u003c2450011  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 459905
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e14 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 46616
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1004536
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c40 ",
+		"act_rows": 1014367
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003733
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e38 and episode_nr\u003c183 ",
+		"act_rows": 145338
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e77352 and episode_of_id\u003c2388859  and season_nr\u003e0 and season_nr\u003c16  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 917196
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e29 and season_nr\u003c44 ",
+		"act_rows": 8184
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e35173 and episode_of_id\u003c1968163 ",
+		"act_rows": 1413920
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e29 and season_nr\u003c56  and episode_nr\u003e93 and episode_nr\u003c462 ",
+		"act_rows": 1410
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e1 and episode_nr\u003c446 ",
+		"act_rows": 933471
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1590689 and episode_of_id\u003c1730423  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 25072
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1082908 and episode_of_id\u003c2032751 ",
+		"act_rows": 509612
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e29825 and episode_of_id\u003c660740  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e119 and episode_nr\u003c470 ",
+		"act_rows": 21647
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1961 and production_year\u003c1964  and episode_of_id\u003e389315 and episode_of_id\u003c2364776  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 7447
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e44 and season_nr\u003c46 ",
+		"act_rows": 163
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1920 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444935
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1981 and production_year\u003c2010 ",
+		"act_rows": 450908
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e231223 and episode_of_id\u003c2019262 ",
+		"act_rows": 1295083
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c2  and production_year\u003e1912 and production_year\u003c1963 ",
+		"act_rows": 151659
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e6 and episode_nr\u003c494 ",
+		"act_rows": 653193
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1947 and production_year\u003c1957  and episode_of_id\u003e379130 and episode_of_id\u003c2160269  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 18629
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e10 and episode_nr\u003c138 ",
+		"act_rows": 444070
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1925 and production_year\u003c1934 ",
+		"act_rows": 20839
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e150 and episode_nr\u003c396 ",
+		"act_rows": 43343
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e76 and episode_nr\u003c490 ",
+		"act_rows": 110868
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1903 and production_year\u003c1959  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 33124
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1957 and production_year\u003c1990  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 195111
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1912 and production_year\u003c1934 ",
+		"act_rows": 79994
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c4 ",
+		"act_rows": 186053
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c58  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003609
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5 ",
+		"act_rows": 944343
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e10 and season_nr\u003c55  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 72369
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e883150 and episode_of_id\u003c1466650  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 372650
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e3 and season_nr\u003c59 ",
+		"act_rows": 261000
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1953 and production_year\u003c2009  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 657134
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1929 and production_year\u003c2016 ",
+		"act_rows": 2284121
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003737
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e15 and season_nr\u003c36 ",
+		"act_rows": 36808
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e302 and episode_nr\u003c353 ",
+		"act_rows": 3371
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1488890 and episode_of_id\u003c2241345 ",
+		"act_rows": 130238
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e9 and season_nr\u003c27 ",
+		"act_rows": 69058
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e5 and season_nr\u003c38 ",
+		"act_rows": 155938
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e375 and episode_nr\u003c429 ",
+		"act_rows": 2076
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1905 and production_year\u003c2004  and season_nr\u003e9 and season_nr\u003c31 ",
+		"act_rows": 30992
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1916 and production_year\u003c1985  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 180369
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e10 and episode_nr\u003c487 ",
+		"act_rows": 499859
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e104 and episode_nr\u003c290 ",
+		"act_rows": 71825
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e291592 and episode_of_id\u003c985323  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 419996
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c3 ",
+		"act_rows": 732082
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1913 and production_year\u003c1996  and episode_of_id\u003e263833 and episode_of_id\u003c2411692 ",
+		"act_rows": 343862
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1915 and production_year\u003c1921  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e409496 and episode_of_id\u003c2402683  and episode_nr\u003e10 and episode_nr\u003c442 ",
+		"act_rows": 358654
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e29 and season_nr\u003c51 ",
+		"act_rows": 9550
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e185894 and episode_of_id\u003c2393964  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 908562
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5 ",
+		"act_rows": 944343
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1913 and production_year\u003c2015 ",
+		"act_rows": 2345307
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e425269 and episode_of_id\u003c1659540  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 718447
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1933 and production_year\u003c1978  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 181293
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e13 and season_nr\u003c50 ",
+		"act_rows": 51694
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e983600 and episode_of_id\u003c1751864  and season_nr\u003e44 and season_nr\u003c50 ",
+		"act_rows": 293
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003733
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e46 and episode_nr\u003c214 ",
+		"act_rows": 132112
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e24 and season_nr\u003c51  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 17139
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e33 and season_nr\u003c46 ",
+		"act_rows": 5379
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1969 and production_year\u003c1980  and episode_of_id\u003e108531 and episode_of_id\u003c2512957 ",
+		"act_rows": 75815
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e3 and season_nr\u003c53 ",
+		"act_rows": 253410
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1901 and production_year\u003c1992  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e44 and episode_nr\u003c479 ",
+		"act_rows": 29528
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e19 and episode_nr\u003c169 ",
+		"act_rows": 282957
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1933 and production_year\u003c1945 ",
+		"act_rows": 25351
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e164914 and episode_of_id\u003c807865  and episode_nr\u003e67 and episode_nr\u003c80 ",
+		"act_rows": 5502
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c3 ",
+		"act_rows": 732082
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1942 and production_year\u003c1945  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 9
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e3 and season_nr\u003c57  and episode_nr\u003e123 and episode_nr\u003c443 ",
+		"act_rows": 18910
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c4  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1905 and production_year\u003c1992  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e12 and season_nr\u003c35 ",
+		"act_rows": 8631
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1907 and production_year\u003c1972  and season_nr\u003e4 and season_nr\u003c40 ",
+		"act_rows": 16237
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003737
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e68946 and episode_of_id\u003c2512637  and season_nr\u003e1 and season_nr\u003c59 ",
+		"act_rows": 477166
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e9 and season_nr\u003c44  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 80170
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c4  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1902 and production_year\u003c1978  and episode_of_id\u003e890636 and episode_of_id\u003c1059037 ",
+		"act_rows": 15053
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1913 and production_year\u003c1982  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 212859
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e142036 and episode_of_id\u003c280748  and season_nr\u003e13 and season_nr\u003c40  and episode_nr\u003e23 and episode_nr\u003c441 ",
+		"act_rows": 1707
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e858600 and episode_of_id\u003c2008750 ",
+		"act_rows": 714179
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e1198915 and episode_of_id\u003c2275155  and season_nr\u003e51 and season_nr\u003c57 ",
+		"act_rows": 21
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e73451 and episode_of_id\u003c2496932 ",
+		"act_rows": 1440276
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e231755 and episode_of_id\u003c1775827  and season_nr\u003e17 and season_nr\u003c44  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 27886
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c3  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e199457 and episode_of_id\u003c902201 ",
+		"act_rows": 648435
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e216080 and episode_of_id\u003c1199674  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 649881
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e516366 and episode_of_id\u003c1087353  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 356849
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003737
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e164 and episode_nr\u003c293 ",
+		"act_rows": 29362
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1927 and production_year\u003c2017 ",
+		"act_rows": 832317
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1004536
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e1586883 and episode_of_id\u003c2295990  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 25868
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1004536
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e201 and episode_nr\u003c498 ",
+		"act_rows": 24370
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1932 and production_year\u003c1960 ",
+		"act_rows": 115882
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e785578 and episode_of_id\u003c2447576 ",
+		"act_rows": 782673
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1965 and production_year\u003c2005 ",
+		"act_rows": 1013280
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e199 and episode_nr\u003c475 ",
+		"act_rows": 21872
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e4 and episode_nr\u003c386 ",
+		"act_rows": 758998
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1915 and production_year\u003c1969 ",
+		"act_rows": 277266
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e13 and season_nr\u003c40 ",
+		"act_rows": 48181
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c2  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 629785
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e100 and episode_nr\u003c326 ",
+		"act_rows": 73706
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e5 and season_nr\u003c23  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 143011
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e11 and season_nr\u003c56 ",
+		"act_rows": 65911
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1950 and production_year\u003c1959  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 30595
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1906 and production_year\u003c1960  and episode_of_id\u003e1424397 and episode_of_id\u003c2448340 ",
+		"act_rows": 6713
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1982 and production_year\u003c2009  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 540701
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e4 and season_nr\u003c22 ",
+		"act_rows": 180318
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e43 and episode_nr\u003c86 ",
+		"act_rows": 68397
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 815516
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1906 and production_year\u003c1964 ",
+		"act_rows": 189827
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e25 and season_nr\u003c52  and episode_nr\u003e12 and episode_nr\u003c459 ",
+		"act_rows": 9811
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1921 and production_year\u003c2015  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e30 and episode_nr\u003c364 ",
+		"act_rows": 203029
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e302 and episode_nr\u003c336 ",
+		"act_rows": 2347
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4 ",
+		"act_rows": 829121
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e16160 and episode_of_id\u003c2513842  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 993653
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1941 and production_year\u003c2001  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 378932
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e378499 and episode_of_id\u003c1691320 ",
+		"act_rows": 1157882
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e209 and episode_nr\u003c497 ",
+		"act_rows": 22073
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c4 ",
+		"act_rows": 186053
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1912 and production_year\u003c1994 ",
+		"act_rows": 719890
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e42 and season_nr\u003c57 ",
+		"act_rows": 2659
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e167 and episode_nr\u003c294 ",
+		"act_rows": 27968
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e144 and episode_nr\u003c238 ",
+		"act_rows": 34648
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e103931 and episode_of_id\u003c2464103  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e13 and episode_nr\u003c362 ",
+		"act_rows": 364330
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e5 and season_nr\u003c55  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 160198
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e146252 and episode_of_id\u003c2207957 ",
+		"act_rows": 1373077
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e8 and season_nr\u003c31 ",
+		"act_rows": 86108
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1004536
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e146 and episode_nr\u003c455 ",
+		"act_rows": 48149
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e731437 and episode_of_id\u003c2201587  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 566462
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1929 and production_year\u003c1989  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 213627
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e316 and episode_nr\u003c391 ",
+		"act_rows": 3996
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e464561 and episode_of_id\u003c2037501 ",
+		"act_rows": 1077760
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1211655 and episode_of_id\u003c2203617 ",
+		"act_rows": 391719
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1919 and production_year\u003c2010  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e132 and episode_nr\u003c310 ",
+		"act_rows": 34072
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e69 and episode_nr\u003c377 ",
+		"act_rows": 115606
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1923 and production_year\u003c1973  and season_nr\u003e0 and season_nr\u003c57  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 111203
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e268491 and episode_of_id\u003c2386665 ",
+		"act_rows": 1260054
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1016234 and episode_of_id\u003c2192316  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e67 and episode_nr\u003c478 ",
+		"act_rows": 50875
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e37 and episode_nr\u003c323 ",
+		"act_rows": 170551
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1119697 and episode_of_id\u003c1731105  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 329123
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1929 and production_year\u003c1958  and episode_of_id\u003e430738 and episode_of_id\u003c2307600 ",
+		"act_rows": 27453
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e242 and episode_nr\u003c245 ",
+		"act_rows": 296
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e1 and season_nr\u003c57 ",
+		"act_rows": 496587
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e451307 and episode_of_id\u003c2396702 ",
+		"act_rows": 1089591
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1509331
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e58250 and episode_of_id\u003c2517776 ",
+		"act_rows": 1454360
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e10 and season_nr\u003c43  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 71288
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c33  and episode_nr\u003e9 and episode_nr\u003c472 ",
+		"act_rows": 527182
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e3 and season_nr\u003c27 ",
+		"act_rows": 245709
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c54  and episode_nr\u003e251 and episode_nr\u003c323 ",
+		"act_rows": 6765
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e3 and season_nr\u003c12  and episode_nr\u003e2 and episode_nr\u003c337 ",
+		"act_rows": 172826
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c2  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 629785
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e392424 and episode_of_id\u003c2404106  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 729258
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e984837 and episode_of_id\u003c2458368  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 413643
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e13 and episode_nr\u003c56 ",
+		"act_rows": 259632
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1944 and production_year\u003c1998  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 443936
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e2001 and production_year\u003c2007 ",
+		"act_rows": 133163
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1958 and production_year\u003c2003  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 389216
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1903 and production_year\u003c2011  and season_nr\u003e1 and season_nr\u003c41  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 394107
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e487 and episode_nr\u003c491 ",
+		"act_rows": 97
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1938 and production_year\u003c1951  and episode_of_id\u003e1353214 and episode_of_id\u003c2504302 ",
+		"act_rows": 1084
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c3  and production_year\u003e1902 and production_year\u003c2003 ",
+		"act_rows": 45721
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e120 and episode_nr\u003c364 ",
+		"act_rows": 63157
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e402 and episode_nr\u003c454 ",
+		"act_rows": 1865
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1924 and production_year\u003c1955 ",
+		"act_rows": 91527
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1922 and production_year\u003c1998 ",
+		"act_rows": 807177
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1909 and production_year\u003c1918 ",
+		"act_rows": 51748
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e13 and season_nr\u003c44  and episode_nr\u003e423 and episode_nr\u003c490 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e127904 and episode_of_id\u003c2316432  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 885337
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1918 and production_year\u003c1990 ",
+		"act_rows": 586349
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e97 and episode_nr\u003c470 ",
+		"act_rows": 87691
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e3 and season_nr\u003c52 ",
+		"act_rows": 253254
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1913 and production_year\u003c1994  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 277513
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1907 and production_year\u003c1982 ",
+		"act_rows": 505677
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e6 and season_nr\u003c27 ",
+		"act_rows": 120250
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e3 and season_nr\u003c53  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 259902
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1927 and production_year\u003c1975 ",
+		"act_rows": 319471
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e1 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1003733
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e6 and episode_nr\u003c494 ",
+		"act_rows": 618683
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1975 and production_year\u003c1987 ",
+		"act_rows": 166426
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c3 ",
+		"act_rows": 732082
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e626210 and episode_of_id\u003c2282807 ",
+		"act_rows": 929171
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e2 and season_nr\u003c12  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e1579887 and episode_of_id\u003c2455112 ",
+		"act_rows": 46027
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c4 ",
+		"act_rows": 186053
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e203 and episode_nr\u003c393 ",
+		"act_rows": 20058
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 11
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e5 and season_nr\u003c54  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 163743
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 953887
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1954 and production_year\u003c2014 ",
+		"act_rows": 763407
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e6 and season_nr\u003c53  and episode_nr\u003e97 and episode_nr\u003c394 ",
+		"act_rows": 17053
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e40 and episode_nr\u003c446 ",
+		"act_rows": 176379
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e151 and episode_nr\u003c470 ",
+		"act_rows": 45422
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e224971 and episode_of_id\u003c2369320 ",
+		"act_rows": 1247336
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e144 and episode_nr\u003c299 ",
+		"act_rows": 39142
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1918 and production_year\u003c1975  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e130 and episode_nr\u003c427 ",
+		"act_rows": 5578
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e10 and season_nr\u003c59  and episode_nr\u003e30 and episode_nr\u003c351 ",
+		"act_rows": 27358
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1928 and production_year\u003c2007 ",
+		"act_rows": 1404815
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e224400 and episode_of_id\u003c1595518  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 848474
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e27726 and episode_of_id\u003c2465714  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 937497
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e23 and season_nr\u003c50 ",
+		"act_rows": 18150
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e138123 and episode_of_id\u003c728859  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 338873
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072562
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1949 and production_year\u003c1985  and episode_of_id\u003e912199 and episode_of_id\u003c1443716 ",
+		"act_rows": 99659
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1910 and production_year\u003c1961 ",
+		"act_rows": 165121
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e9005 and episode_of_id\u003c2248806  and season_nr\u003e46 and season_nr\u003c59 ",
+		"act_rows": 2000
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 2387734
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c3 ",
+		"act_rows": 732082
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1925 and production_year\u003c2009  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 667687
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e75 and episode_nr\u003c446 ",
+		"act_rows": 103616
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e1203164 and episode_of_id\u003c2499974  and season_nr\u003e4 and season_nr\u003c58  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 60401
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1902 and production_year\u003c2014  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444809
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e1 and episode_nr\u003c489 ",
+		"act_rows": 888362
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e143 and episode_nr\u003c371 ",
+		"act_rows": 46914
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 930429
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e422 and episode_nr\u003c425 ",
+		"act_rows": 63
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1904 and production_year\u003c2018  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e18 and season_nr\u003c40 ",
+		"act_rows": 27348
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1937 and production_year\u003c1993  and episode_of_id\u003e442767 and episode_of_id\u003c2361011 ",
+		"act_rows": 258659
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1948 and production_year\u003c2018  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e16 and episode_nr\u003c306 ",
+		"act_rows": 335308
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e88 and episode_nr\u003c415 ",
+		"act_rows": 94907
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e5 and season_nr\u003c45 ",
+		"act_rows": 162317
+	},
+	{
+		"query": "select * from imdb.title where episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1030434
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e11 and season_nr\u003c41 ",
+		"act_rows": 61637
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185 ",
+		"act_rows": 1444946
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e27584 and episode_of_id\u003c2058083 ",
+		"act_rows": 1482869
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1931 and production_year\u003c1971  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 100787
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and production_year\u003e1900 and production_year\u003c2019 ",
+		"act_rows": 815516
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1018264
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4 ",
+		"act_rows": 829121
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1957 and production_year\u003c1976 ",
+		"act_rows": 224332
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1906 and production_year\u003c1982  and season_nr\u003e7 and season_nr\u003c29 ",
+		"act_rows": 10332
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c4  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e708969 and episode_of_id\u003c1985220  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 553373
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e20 and season_nr\u003c30  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 15016
+	},
+	{
+		"query": "select * from imdb.title where season_nr\u003e0 and season_nr\u003c59 ",
+		"act_rows": 1072599
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where episode_of_id\u003e170376 and episode_of_id\u003c782461 ",
+		"act_rows": 565397
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and production_year\u003e1959 and production_year\u003c1986 ",
+		"act_rows": 147080
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e9 and episode_nr\u003c343 ",
+		"act_rows": 499392
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e485489 and episode_of_id\u003c918909  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 262918
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e44 and episode_nr\u003c284 ",
+		"act_rows": 147027
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e1 and kind_id\u003c4  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1983 and production_year\u003c1996 ",
+		"act_rows": 273484
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_of_id\u003e0 and episode_of_id\u003c2528185  and season_nr\u003e16 and season_nr\u003c56 ",
+		"act_rows": 37573
+	},
+	{
+		"query": "select * from imdb.title where kind_id\u003e0 and kind_id\u003c5  and season_nr\u003e0 and season_nr\u003c59  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 1
+	},
+	{
+		"query": "select * from imdb.title where production_year\u003e1900 and production_year\u003c2019  and episode_nr\u003e0 and episode_nr\u003c499 ",
+		"act_rows": 954690
+	}
+]
