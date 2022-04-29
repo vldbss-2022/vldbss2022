@@ -33,6 +33,8 @@ loss = MSE(log(act_rows) - log(est_rows)) = MSE(log(act_rows / est_rows)) = MSE(
 ```
 where `q-error = max(act_rows / est_rows, est_rows / act_rows)`, which is a common metric for cardinality estimation.
 
+You can see [Selectivity Estimation for Range Predicates using Lightweight Models](http://www.vldb.org/pvldb/vol12/p1044-dutt.pdf) for more details.
+
 ## A data-driven method
 We use sum-product networks(SPN) here to learn the joint probability distribution of our data. It can capture correlation between multiple columns.
 
@@ -51,6 +53,8 @@ Learning SPNs works by recursively splitting the data in different groups of row
 With an SPN at hand, we can compute probabilities for predicates on arbitrary columns. Intuitively, the conditions are first evaluated on every relevant leaf. Afterwards, the SPN is evaluated bottom up. 
 
 For instance in the picture above, to estimate `where region='Europe' and age<30`,  we compute the probability of European customers in the corresponding blue region leaf nodes (80% and 10%) and the probability of a customer being younger than 30 (15% and 20%) in the green age leaf nodes. These probabilities are then multiplied at the product node level above, resulting in probabilities of 12% and 2%, respectively. Finally, at the root level (sum node), we have to consider the weights of the clusters, which leads to 12% · 0.3 + 2% · 0.7 = 5%. Multiplied by the number of rows in the table, we get an approximation of 50 European customers who are younger than 30.
+
+You can see [DeepDB: Learn from Data, not from Queries!](http://www.vldb.org/pvldb/vol13/p992-hilprecht.pdf) for more details.
 
 ## LAB1
 
@@ -84,3 +88,9 @@ You need to fill some missing code in `learn_from_query.py`, `learn_from_data.py
 
 After you fill all missing code, you can run `python evaluation.py` and it will test your models and generate a report under `eval` directory.
 
+## Reference
+
+1. Anshuman Dutt, Chi Wang, Azade Nazi, Srikanth Kandula, Vivek R. Narasayya, Surajit Chaudhuri:
+Selectivity Estimation for Range Predicates using Lightweight Models. Proc. VLDB Endow. 12(9): 1044-1057 (2019)
+2. Benjamin Hilprecht, Andreas Schmidt, Moritz Kulessa, Alejandro Molina, Kristian Kersting, Carsten Binnig:
+DeepDB: Learn from Data, not from Queries! Proc. VLDB Endow. 13(7): 992-1005 (2020)
