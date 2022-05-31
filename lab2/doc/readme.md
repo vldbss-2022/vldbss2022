@@ -90,7 +90,7 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 
 为了简单，在 lab2 的实验数据中只会出现 HashAgg, HashJoin, Sort, Selection, Projection, TableReader, TableScan, IndexReader, IndexScan, IndexLookup 这些算子。
 
-另外为这些算子设计代价公式时，不用考虑并发、Cache 等复杂的环境因素，只需要考虑算子本身的执行逻辑即可。
+在生成 LAB2 的实验数据时，关闭了并发和 Cache，所以设计算子代价公式时只需要考虑算子本身的执行逻辑即可；如为 Projection 设计代价公式时，你可以设计为 `input_rows * cpu_factor` 而不用为 `(input_rows * cpu_factor) / concurrency`。
 
 执行计划及上述算子的解释，可见文档：https://docs.pingcap.com/zh/tidb/dev/explain-overview
 
