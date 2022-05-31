@@ -111,3 +111,7 @@ NOTICE: 训练和测试用的执行计划是通过特殊模式获取的，可以
 对于 Plan 的解析代码，都已经被实现在 `plan.py` 中了，你可以直接使用。
 
 lab2 使用 TiDB 校准前的 cost model 作为 baseline，完成所有代码后，请执行 `evaluation.py` 对你的模型进行评估。
+
+评估使用 `est_cost` 和 `act_exec_time` 的相关性作为指标，好的 cost model 会让他俩呈现比较好的正相关，如下：
+
+![eval](eval.png)
