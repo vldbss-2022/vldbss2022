@@ -6,6 +6,7 @@ class Test_simple():
         json_file = 'lab3/eval/results.json'
         with open(json_file, 'r') as f:
             data = json.load(f)
+        assert(len(data) > 0)
         for item in data:
             cost_flag, card_flag = False, False
             warnings = item["warnings"]

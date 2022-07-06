@@ -6,16 +6,17 @@ class Test_simple():
         json_file = 'lab1/eval/results.json'
         with open(json_file, 'r') as f:
             data = json.load(f)
-        act_cost = data.get('avi_cost')
+        act_cost = data.get('act_cost')
         est_cost = data.get('est_cost')
         act_cardinality = data.get('act_cardinality')
         est_cardinality = data.get('est_cardinality')
         
+        assert(len(act_cost) > 0)
         assert(len(act_cost) == len(est_cost))
         assert(len(act_cost) == len(act_cardinality))
         assert(len(act_cost) == len(est_cardinality))
-        for v in est_cost:
-            assert(v > 0)
+        assert(sum(est_cardinality) > 0)
+        assert(sum(est_cost) > 0)
 
 if __name__ == '__main__':
     pytest.main(['test_result.py'])
