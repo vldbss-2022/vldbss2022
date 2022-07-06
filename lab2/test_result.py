@@ -18,4 +18,4 @@ class Test_simple():
 
 
 if __name__ == '__main__':
-    pytest.main(['test_result.py']) 
+    pytest.main(['test_result.py'])
