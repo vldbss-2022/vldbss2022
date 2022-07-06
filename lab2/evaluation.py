@@ -37,3 +37,11 @@ if __name__ == '__main__':
     draw_act_est_figure("tidb", tidb_costs, act_times, True)
     draw_act_est_figure("learning", est_learning_costs, act_learning_times, True)
     draw_act_est_figure("calibration", est_calibration_costs, act_times, True)
+
+    with open('./eval/results.json', 'w') as outfile:
+        json.dump({
+            "act": act_times,
+            "time": tidb_costs,
+            "learning": est_learning_costs,
+            "calibration": est_calibration_costs,
+        }, outfile)
