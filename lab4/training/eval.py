@@ -1,6 +1,7 @@
 from os import path
 import time
 import torch
+import json
 from torch.autograd import Variable
 import numpy as np
 from util import unnormalize, EncodeContext
@@ -46,8 +47,16 @@ def model_eval(ctx:EncodeContext, model, eval_start, eval_end):
     est_cards = est_cards.squeeze()
     target_cards = target_cards.squeeze()
 
-    draw_act_est_figure("cost", est_costs, target_costs, False)
-    draw_act_est_figure("cardinality", est_cards, target_cards, False)
+    draw_act_est_figure("cost", est_costs, target_costs, True)
+    draw_act_est_figure("cardinality", est_cards, target_cards, True)
+
+    with open('./eval/results.json', 'w') as outfile:
+        json.dump({
+            "act_cost": target_costs.tolist(),
+            "est_cost": est_costs.tolist(),
+            "act_cardinality": target_cards.tolist(),
+            "est_cardinality": est_cards.tolist()
+        }, outfile)    
 
     return model
 
