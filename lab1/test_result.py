@@ -19,7 +19,7 @@ class Test_simple():
             assert True
 
     def test_spn(self):
-        json_file = 'lab1/eval/result.json'
+        json_file = 'lab1/eval/results.json'
         with open(json_file, 'r') as f:
             data = json.load(f)
         if [x[1] for x in data.items() if 'spn_' in x[0]]:
