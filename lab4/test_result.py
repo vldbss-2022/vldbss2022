@@ -10,13 +10,12 @@ class Test_simple():
         est_cost = data.get('est_cost')
         act_cardinality = data.get('act_cardinality')
         est_cardinality = data.get('est_cardinality')
-        if len(act_cost) != len(est_cost):
-            assert False
-        if [i for i in est_cost if i <= 0]:
-            assert False
-        if abs(act_cardinality-est_cardinality)< 0.2 and abs(act_cost-est_cost) < 0.3:
-            assert True
-
+        
+        assert(len(act_cost) == len(est_cost))
+        assert(len(act_cost) == len(act_cardinality))
+        assert(len(act_cost) == len(est_cardinality))
+        for v in est_cost:
+            assert(v > 0)
 
 if __name__ == '__main__':
     pytest.main(['test_result.py'])

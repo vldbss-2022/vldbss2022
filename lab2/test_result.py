@@ -7,14 +7,18 @@ class Test_simple():
         with open(json_file, 'r') as f:
             data = json.load(f)
         act = data.get('avi')
-        tidb = data.get('est')
+        tidb = data.get('tidb')
         learning = data.get('learning')
         calibration = data.get('calibration')
-        if len(act) != len(tidb):
-            assert False
-        if [i for i in learning if i <= 0]:
-            assert False
 
+        assert(len(act) == len(tidb))
+        assert(len(act) == len(learning))
+        assert(len(act) == len(calibration))
+
+        for v in learning:
+            assert(v>0)
+        for v in calibration:
+            assert(v>0)
 
 
 if __name__ == '__main__':
