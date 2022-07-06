@@ -2,7 +2,7 @@ import pytest
 import json
 
 class Test_simple():
-    def test_cost(self):
+    def test_lab3(self):
         json_file = 'lab3/eval/results.json'
         with open(json_file, 'r') as f:
             data = json.load(f)
