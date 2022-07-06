@@ -30,10 +30,14 @@ if __name__ == '__main__':
     _, _, est_learning_costs, act_learning_times = estimate_learning(train_plans, test_plans)
     est_calibration_costs = estimate_calibration(train_plans, test_plans)
 
-    for i in range(len(est_calibration_costs)):
-        if act_times[i] > 3500 and est_calibration_costs[i] < 1.2e9:
-            print(test_plans[i].query)
-
     draw_act_est_figure("tidb", tidb_costs, act_times, True)
     draw_act_est_figure("learning", est_learning_costs, act_learning_times, True)
     draw_act_est_figure("calibration", est_calibration_costs, act_times, True)
+
+    with open('./eval/results.json', 'w') as outfile:
+        json.dump({
+            "act": act_times,
+            "tidb": tidb_costs,
+            "learning": est_learning_costs,
+            "calibration": est_calibration_costs,
+        }, outfile)

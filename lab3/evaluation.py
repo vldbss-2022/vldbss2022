@@ -1,5 +1,4 @@
 import json
-
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -14,17 +13,28 @@ query_file = './data/query.json'
 with open(query_file, 'r') as f:
     qs = json.load(f)
 
-# YOUR CODE HERE: set your estimator addresses
 cursor.execute("set @@tidb_external_cardinality_estimator_address='http://127.0.0.1:8888/cardinality'")
 cursor.execute("set @@tidb_external_cost_estimator_address='http://127.0.0.1:8888/cost'")
 
+results = []
 for q in qs:
     cursor.execute("explain format='verbose' " + q)
     raw_plan = cursor.fetchall()
-    print(q)
+    plan = []
     for x in raw_plan:
-        print("  " + "\t".join(list(x)))
-    print()
+        plan.append('\t'.join(x))
     cursor.execute("show warnings")
     warnings = cursor.fetchall()
-    assert (len(warnings) == 0)
+    ws = []
+    for w in warnings:
+        ws.append('\t'.join([w[0], w[2]]))
+    result = {
+        "query": q,
+        "plan": plan,
+        "warnings": ws
+    }
+    results.append(result)
+    print(result)
+
+with open('./eval/results.json', 'w') as outfile:
+    json.dump(results, outfile)

@@ -21,6 +21,10 @@ def gen_report(act, est_results):
         f.write("![%s](%s.png)\n\n" % (name, name))
     f.close()
 
+    with open('./eval/results.json', 'w') as outfile:
+        est_results['act'] = act
+        json.dump(est_results, outfile)
+
 
 def est_spn(csvfile, train_data, table_stats):
     print("SPN estimation on %s" % csvfile)

@@ -1,0 +1,8 @@
+.idea
+*.pkl
+*.npy
+__pycache__/
+ *.pyc
+lab4/data/plans_seq.json
+lab4/data/plans_seq_sample.json
+lab4/data/model

@@ -7,12 +7,12 @@ class Resquest(BaseHTTPRequestHandler):
     def handle_cardinality_estimate(self, req_data):
         # YOUR CODE HERE: use your model in lab1
         print("cardinality_estimate post_data: " + str(req_data))
-        return "0.0"
+        return "0.0" # return the selectivity
 
     def handle_cost_estimate(self, req_data):
         # YOUR CODE HERE: use your model in lab2
         print("cost_estimate post_data: " + str(req_data))
-        return "0.0"
+        return "0.0" # return the cost
 
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
