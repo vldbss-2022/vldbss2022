@@ -106,3 +106,8 @@ load data local infile ‘LAB1PATH/data/title_sample_1000.csv’ into table titl
 ```
 
 接着启动你的服务和你修改后的 TiDB，然后执行 `python evaluation.py`，会尝试用你的模式生成一些计划到 `eval/results.json` 里，接着上传 `results.json` 触发 autograding。
+
+
+## Preparation for Lab4
+
+Lab4 中需要使用到一个较大的词向量文件，请点击[这里](https://pan.baidu.com/s/14ZN1DqRcTOJJqsi8203suw)(密码: tt2s)提前下载，在 lab4 中会使用到其中的 wordvectors_updated.kv。
