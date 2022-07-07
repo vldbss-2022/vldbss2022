@@ -2,24 +2,18 @@
 
 ## Introduction
 
-This is the labs of VLDB Summer School 2022. The target is to build a learning-based optimizer.
-
-The application of learning method in optimizer is mainly reflected in the following two points:
-
-- Cardinality Estimation
-- Cost Model
+This is the labs of VLDB Summer School 2022, which contains some experiments about learning-based optimizer.
 
 ## Labs
 
 There are 4 labs in this course.
 
-- [Lab 1](./lab1/doc/readme.md), build optimizer with some learning-based estimation methods.
-- [Lab 2](./lab2/doc/readme.md), build optimizer with some learning-based cost estimation.
-- [Lab 3](./lab3/doc/readme.md), implement the estimations in lab1 and lab2,build optimizer.
-- [Lab 4](./lab4/doc/readme.md), build an end to end optimizer.
+- [Lab 1](./lab1/doc/readme.md), learning-based cardinality estimation.
+- [Lab 2](./lab2/doc/readme.md), learning-based cost estimation.
+- [Lab 3](./lab3/doc/readme.md), integration with a realistic Database(TiDB).
+- [Lab 4](./lab4/doc/readme.md), an end-to-end cardinality and cost estimator.
 
-
-You need to fill some missing code in order to complete labs.
+You need to fill some missing code in order to complete these labs.
 
 ## Autograding
 
