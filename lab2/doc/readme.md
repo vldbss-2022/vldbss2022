@@ -21,7 +21,20 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 4 rows in set (0.07 sec)
 ```
 
-我们有多种从执行计划中抽取特征的方式。
+整个执行计划按照树状组织，每一行对应一个算子，主要的信息有：
+
+1. id: 对应的算子名称;
+2. estRows: 优化器对该算子返回行数的估算值;
+3. actRows: 该算子实际的返回行数;
+4. estCost: 优化器对该计划的估计值;
+5. execution: 实际的执行情况，包含执行时间;
+
+NOTICE: 训练和测试用的执行计划是通过特殊模式获取的，可以保证 `estRows` 和 `actRows` 一定相同，以避免基数估算误差对代价模型的影响。
+
+你可以从计划当中提取特征，用来训练你的模型；不过请不要使用 `execution info`, `memory`, `disk` 和 `actRows` 字段的信息作为特征，因为这些信息需要在实际执行计划后才能获得，不应该在估算计划代价时被使用。
+
+
+提取特征的方式可以有多种:
 
 1. 最简单的方式是从各个节点抽取特征然后求和，以这种方式我们可以得到如下特征：
    
@@ -42,12 +55,12 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 
 你可以使用 MLP、LSTM 等神经网络来对代价模型进行建模。
 
-在计算损失函数时，你可以用如下的平均相对误差：
+我们将估算的代价直接和实际执行时间对齐，在计算损失函数时，你可以用如下的平均相对误差：
 ```
-1/N \sum_{i=1}^N |act_time_i - est_time_i| / act_time_i
+1/N \sum_{i=1}^N |act_time_i - est_cost_i| / act_time_i
 ```
 
-采用以上方法进行代价估算时，我们需要执行查询记录执行计划和执行时间，生成训练数据集来训练对应的机器学习模型。
+采用以上方法进行代价估算时，我们需要从计划中提取特征和执行时间，生成训练数据集来训练对应的机器学习模型。
 
 ## Calibrate Cost Factors By Regression Model
 
@@ -108,10 +121,6 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 执行计划及上述算子的解释，可见文档：https://docs.pingcap.com/zh/tidb/dev/explain-overview
 
 训练用和测试用的执行计划被分别放在 `train_plans.json` 和 `test_plans.json` 中。
-
-NOTICE: 在实验中请不要使用 `execution info`,`memory`, `disk` 和 `actRows` 字段的信息，因为这些信息需要在实际执行计划后才能获得，不应该在估算计划代价时被使用。
-
-NOTICE: 训练和测试用的执行计划是通过特殊模式获取的，可以保证 `estRows` 和 `actRows` 一定相同，以避免基数估算误差对代价模型的影响。
 
 ### The Code
 
