@@ -187,15 +187,8 @@ class SPN:
         """
         get_next_op returns the next operation to do when constructing a SPN.
         """
-        if scope.n_cols() == 1:                             # if there is only 1 column left, 
-            # YOUR CODE HERE
-            pass
-        if split_col_failed:                                # if split_col failed last time, 
-            return Operation.SPLIT_ROWS, False              # then split rows this time
-
-        if scope.n_rows() <= row_batch_threshold:           # if the number of rows is less than row_batch_threshold, 
-            return Operation.SPLIT_COLS, True               # then split cols enforcedly, 
-        return Operation.SPLIT_COLS, False                  # else try to split cols first.
+        # YOUR CODE HERE: return the next operation
+        pass
 
 
     @staticmethod
