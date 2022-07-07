@@ -22,7 +22,7 @@ def add_sample_bitmap(input_path, output_path, data, sample, sample_num):
                         bitmap_index = get_preds_bitmap(node['condition_index'], data, sample, sample_num)
                     if len(bitmap_filter) > 0 or len(bitmap_index) > 0 or len(bitmap_other) > 0:
                         # YOUR CODE HERE: merge these bitmaps into a single bitmap.
-
+                        # You can use the function bitand here.
                         node['bitmap'] = ''.join([str(x) for x in bitmap])
                     nodes_with_sample.append(node)
                 parsed_plan['seq'] = nodes_with_sample
@@ -70,10 +70,10 @@ def get_bitmap_from_predtree(root, data, sample, sample_num):
         bitmap = []
         if predicate['operator'] == 'AND':
             # YOUR CODE HERE: get the bitmap for this AND operator.
-
+            # You can use the function bitand here.
         elif predicate['operator'] == 'OR':
             # YOUR CODE HERE: get the bitmap for this OR operator.
-
+            # You can use the function bitor here.
         else:
             print(predicate['operator'])
             raise
