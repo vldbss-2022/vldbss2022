@@ -155,7 +155,8 @@ def encode_job_plan_node(ctx: EncodeContext, node, condition_max_num):
             else:
                 extra_info_inx = ctx.indexes_id[index_name]
             extra_info_vec[extra_info_inx - 1] = 1
-            # YOUR CODE HERE: encode condition_filter to condition1_vec and condition_index to condition2_vec and bitmap to sample_vec
+            # YOUR CODE HERE: encode condition_filter to condition1_vec and condition_index to condition2_vec and bitmap
+            # to sample_vec. You can use the function encode_condition and encode_sample here.
 
 
     return operator_vec, extra_info_vec, condition1_vec, condition2_vec, sample_vec, has_bitmap
