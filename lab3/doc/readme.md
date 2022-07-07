@@ -102,6 +102,7 @@ CREATE TABLE `title` (
     KEY `idx1` (`production_year`,`kind_id`,`season_nr`),
     KEY `idx2` (`kind_id`,`production_year`,`episode_nr`)
 );
+load data local infile ‘LAB1PATH/data/title_sample_1000.csv’ into table title fields terminated by ‘,’; -- optional
 ```
 
-接着填写修改 `evaluation.py` 中的 `YOUR CODE HERE` 部分，将变量地址设置为你的服务地址，并执行 `python evaluation.py`，会尝试获得一些查询的执行计划，你需要通过所有查询并不产生任何 warning。
+接着启动你的服务和你修改后的 TiDB，然后执行 `python evaluation.py`，会尝试用你的模式生成一些计划到 `eval/results.json` 里，接着上传 `results.json` 触发 autograding。
