@@ -76,7 +76,7 @@ NOTICE: 训练和测试用的执行计划是通过特殊模式获取的，可以
 1. 合理的代价公式：代价公式是对算子执行的抽象，需要对算子的物理实现有所了解才能设计出合理的代价公式；
 2. 合理的代价因子：代价因子是对物理环境的刻画，比如 cpu_factor 和 scan_factor 的比值可以反应环境中 CPU 和 I/O 的速率；
 
-合理的代价公式需要又人来保证，设计好了代价公式后，可以用回归的方式来对代价因子进行校准。
+合理的代价公式需要由人来保证，设计好了代价公式后，可以用回归的方式来对代价因子进行校准。
 
 对于任意的算子，我们可以将其代价转换为代价因子向量(fv)和代价因子权重向量(wv)的乘积，如假设我们代价公式只考虑 scan，cpu，对于 Sort 算子，其代价就是 `[0, input_rows*log2(input_rows)] * [scan_factor, cpu_factor]`。
 
@@ -114,7 +114,7 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 4 rows in set (0.07 sec)
 ```
 
-为了简单，在 lab2 的实验数据中只会出现 HashAgg, HashJoin, Sort, Selection, Projection, TableReader, TableScan(包含 RangeScan 和 FullScan), IndexReader, IndexScan(包含 RangeScan 和 FullScan), IndexLookup 这些算子。
+为了简单，在 lab2 的实验数据中只会出现 HashAgg, HashJoin, Sort, Selection, Projection, TableReader, TableScan(包含 TableRangeScan 和 TableFullScan), IndexReader, IndexScan(包含 IndexRangeScan 和 IndexFullScan), IndexLookup, TableRowIDScan 这些算子。
 
 在生成 LAB2 的实验数据时，关闭了并发和 Cache，所以设计算子代价公式时只需要考虑算子本身的执行逻辑即可；如为 Projection 设计代价公式时，你可以设计为 `input_rows * cpu_factor` 而不用为 `(input_rows * cpu_factor) / concurrency`。
 

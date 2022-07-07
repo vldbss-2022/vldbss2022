@@ -3,8 +3,9 @@ import torch.nn as nn
 
 from plan import Operator
 
-operators = ["Projection", "Selection", "Sort", "HashAgg", "HashJoin", "TableScan", "IndexScan", "TableRowIDScan",
-             "TableReader", "IndexReader", "IndexLookUp"]
+operators = ["Projection", "Selection", "Sort", "HashAgg", "HashJoin", "IndexHashJoin", "TableScan", "IndexScan",
+             "TableRowIDScan", "TableReader", "IndexReader", "IndexLookUp"]
+
 
 # There are many ways to extract features from plan:
 # 1. The simplest way is to extract features from each node and sum them up. For example, we can get
