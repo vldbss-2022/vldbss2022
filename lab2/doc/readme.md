@@ -99,7 +99,7 @@ NOTICE: 训练和测试用的执行计划是通过特殊模式获取的，可以
 
 ### Introduction
 
-在 lab2 的实验中你需要分别用上述两个方法实现 Cost Model，首先你需要能够基本理解 TiDB 的执行计划，如下：
+在 lab2 的实验中你需要分别用上述两个方法实现 Cost Model，在 `plan.py` 中，实现了 Plan 结构体，能帮你解析如下的 TiDB Plan： 
 
 ```sql
 mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WHERE production_year>=1909 AND production_year<=1909 AND kind_id>=0 AND kind_id<=6 AND season_nr>=0 AND season_nr<=57;
@@ -128,7 +128,7 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 
 在 `cost_learning.py` 中，你需要从执行计划中抽取特性，选择合适的机器学习模型，定义损失函数，训练模型预测执行计划的执行时间。
 
-在 `cost_calibration.py` 中，你需要基于你的理解，补全算子的代价公式，然后通过回归找到一组符合你代价公式的代价因子。注意代价因子的单位是可以变化的，这取决于你的设计，如 scan_cost 可以表示 `扫描 1 byte 数据的代价`，也可以简化为 `扫描 1 行数据的代价`，如果你拿不准，可以参考 TiDB 目前的一些代价公式，可见 https://github.com/pingcap/tidb/blob/master/planner/core/plan_cost.go ；`cost_calibration.py` 目前只考虑了 cpu, scan, net, seek 代价，你可以基于那你的理解将代价模型进一步细化，如引入 memory 相关的代价，将 cpu 细分为 tidb_cpu 和 tikv_cpu 等。
+在 `cost_calibration.py` 的注释中定义了一套简单的算子代价公式，你需要实现他们，然后对这套公式进行回归校准；目前为了简单，只考虑 cpu, scan, net, seek 代价。
 
 对于 Plan 的解析代码，都已经被实现在 `plan.py` 中了，你可以直接使用。
 
@@ -137,3 +137,5 @@ lab2 使用 TiDB 校准前的 cost model 作为 baseline，完成所有代码后
 评估使用 `est_cost` 和 `act_exec_time` 的相关性作为指标，好的 cost model 会让他俩呈现比较好的正相关，如下：
 
 ![eval](eval.png)
+
+同时会产生一个 `/eval/results.json` 文件，请提交这个文件，classroom 会根据这个文件做一个简单的打分。

@@ -88,6 +88,8 @@ You need to fill some missing code in `learn_from_query.py`, `learn_from_data.py
 
 After you fill all missing code, you can run `python evaluation.py` and it will test your models and generate a report under `eval` directory.
 
+And a file `eval/results.json` will be generated, please push it to github to trigger auto-grading.
+
 ## Reference
 
 1. Anshuman Dutt, Chi Wang, Azade Nazi, Srikanth Kandula, Vivek R. Narasayya, Surajit Chaudhuri:
