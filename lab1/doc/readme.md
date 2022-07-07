@@ -1,7 +1,7 @@
 # LAB1 Learning-based Cardinality Estimation
 
 ## Introduction
-Query optimizers depend on cardinality estimates of query predicates to produce a good execution plan. When a query contains multiple predicates, today’s optimizers use a variety of assumptions, such as independence between predicates, to estimate cardinality. These methods often incur large cardinality estimation errors. Recently, some novel learning-based models are proposed to estimate cardinality, such as deep neural networks, gradient boosted trees, sum-product networks.
+Query optimizers depend on cardinality estimates of query predicates to produce a good execution plan. When a query contains multiple predicates, today’s optimizers use a variety of assumptions, such as independence between predicates, to estimate cardinality. These methods often incur large cardinality estimation errors. Recently, some novel learning-based models are proposed to estimate cardinality, such as deep neural networks, gradient boosted trees, and sum-product networks.
 
 Based on the methodology, we split them into two groups:
 
@@ -21,7 +21,7 @@ Besides, there are several heuristic methods which use information from single c
 - Exponential BackOff (EBO): When columns have correlated values, AVI could cause significant underestimations. EBO calculates the combined selectivity by using only 4 most selective predicates with diminishing impact. The combined selectivity fraction is given by `s_{1} x s_{2}^{1/2} x s_{3}^{1/4} x s_{4}^{1/8}` where `s_{k}` represents k-th most selective fraction across all predicates.
 - Minimum Selectivity (MinSel): It calculates the combined selectivity as the minimum selectivity across individual predicates. 
 
-For a given conjunction of predicates, the combined actual selectivity depends on the degree of correlation among the predicates. AVI would produce good estimates if the predicates have no correlation while MinSel represents the other extreme compared to AVI. EBO is expected to capture some intermediate scenarios between complete independence and full correlation. We add the estimated produced by the three heuristic methods into the features of the regression model:
+For given conjunction of predicates, the combined actual selectivity depends on the degree of correlation among the predicates. AVI would produce good estimates if the predicates have no correlation while MinSel represents the other extreme compared to AVI. EBO is expected to capture some intermediate scenarios between complete independence and full correlation. We add the estimated produced by the three heuristic methods into the features of the regression model:
 ```
 [l1, r1, l2, r2, ..., ln, rn, est_avi, est_ebo, est_min_sel]
 ```
