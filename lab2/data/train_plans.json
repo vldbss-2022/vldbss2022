@@ -8936,23 +8936,6 @@
     ]
   },
   {
-    "query": "SELECT /*+ HASH_JOIN(t1, t2) */ * FROM imdb.title t1, imdb.title t2 WHERE t1.production_year = t2.production_year AND t1.production_year>=1917 AND t1.production_year<=1919 AND t1.episode_nr>=23 AND t1.episode_nr<=32 AND t2.episode_of_id>=2250084 AND t2.episode_of_id<=2295591 AND t2.episode_nr>=165 AND t2.episode_nr<=174",
-    "plan": [
-      "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
-      "Projection_9\t0.00\t20333013.12\t0\troot\t\ttime:283.8ms, loops:1, Concurrency:OFF\timdb.title.id, imdb.title.title, imdb.title.imdb_index, imdb.title.kind_id, imdb.title.production_year, imdb.title.imdb_id, imdb.title.phonetic_code, imdb.title.episode_of_id, imdb.title.season_nr, imdb.title.episode_nr, imdb.title.series_years, imdb.title.md5sum, imdb.title.id, imdb.title.title, imdb.title.imdb_index, imdb.title.kind_id, imdb.title.production_year, imdb.title.imdb_id, imdb.title.phonetic_code, imdb.title.episode_of_id, imdb.title.season_nr, imdb.title.episode_nr, imdb.title.series_years, imdb.title.md5sum, row_size: 820\t11.4 KB\tN/A",
-      "└─IndexHashJoin_19\t0.00\t20333007.12\t0\troot\t\ttime:283.8ms, loops:1, \tinner join, inner:IndexLookUp_16, outer key:imdb.title.production_year, inner key:imdb.title.production_year, equal cond:eq(imdb.title.production_year, imdb.title.production_year), row_size: 820\t0 Bytes\tN/A",
-      "  ├─IndexLookUp_66(Build)\t0.00\t20333001.12\t0\troot\t\ttime:283.6ms, loops:1, index_task: {total_time: 106.9ms, fetch_handle: 10.5ms, build: 16.7µs, wait: 96.4ms}, table_task: {total_time: 273.6ms, num: 8, concurrency: 1}\tbatch_size: 20000, row_size: 198\t211.7 KB\tN/A",
-      "  │ ├─IndexRangeScan_63(Build)\t11467.00\t6017798.48\t11467\tcop[tikv]\ttable:t2, index:idx_year(production_year)\ttime:9.84ms, loops:18, cop_task: {num: 1, max: 9.72ms, proc_keys: 11467, tot_proc: 7ms, tot_wait: 1ms, rpc_num: 1, rpc_time: 9.67ms, copr_cache: disabled}, tikv_task:{time:7ms, loops:16}, scan_detail: {total_process_keys: 11467, total_process_keys_size: 527482, total_keys: 11468, rocksdb: {delete_skipped_count: 0, key_skipped_count: 11467, block: {cache_hit_count: 11, read_count: 0, read_byte: 0 Bytes}}}\trange:[1917,1919], keep order:false, row_size: 32\tN/A\tN/A",
-      "  │ └─Selection_65(Probe)\t0.00\t8586767.85\t0\tcop[tikv]\t\ttime:265.2ms, loops:8, cop_task: {num: 18, max: 35.5ms, min: 746.5µs, avg: 14.5ms, p95: 35.5ms, max_proc_keys: 1486, p95_proc_keys: 1486, tot_proc: 223ms, rpc_num: 18, rpc_time: 259.9ms, copr_cache: disabled}, tikv_task:{proc max:33ms, min:0s, p80:22ms, p95:33ms, iters:81, tasks:18}, scan_detail: {total_process_keys: 11467, total_process_keys_size: 1467394, total_keys: 34764, rocksdb: {delete_skipped_count: 32, key_skipped_count: 23815, block: {cache_hit_count: 49487, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.episode_nr, 165), ge(imdb.title.episode_of_id, 2250084), le(imdb.title.episode_nr, 174), le(imdb.title.episode_of_id, 2295591), row_size: 198\tN/A\tN/A",
-      "  │   └─TableRowIDScan_64\t11467.00\t8242757.85\t11467\tcop[tikv]\ttable:t2\ttikv_task:{proc max:33ms, min:0s, p80:22ms, p95:33ms, iters:81, tasks:18}\tkeep order:false, row_size: 198\tN/A\tN/A",
-      "  └─IndexLookUp_16(Probe)\t0.00\t26.00\t0\troot\t\t\tbatch_size: 20000, row_size: 198\tN/A\tN/A",
-      "    ├─Selection_14(Build)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.production_year, 1917), le(imdb.title.production_year, 1919), not(isnull(imdb.title.production_year)), row_size: 32\tN/A\tN/A",
-      "    │ └─IndexRangeScan_12\t0.00\t0.00\t0\tcop[tikv]\ttable:t1, index:idx_year(production_year)\t\trange: decided by [eq(imdb.title.production_year, imdb.title.production_year)], keep order:false, row_size: 32\tN/A\tN/A",
-      "    └─Selection_15(Probe)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.episode_nr, 23), le(imdb.title.episode_nr, 32), row_size: 198\tN/A\tN/A",
-      "      └─TableRowIDScan_13\t0.00\t0.00\t0\tcop[tikv]\ttable:t1\t\tkeep order:false, row_size: 198\tN/A\tN/A"
-    ]
-  },
-  {
     "query": "SELECT production_year FROM imdb.title USE INDEX(idx1) WHERE production_year>=1943 AND production_year<=2009 AND kind_id>=0 AND kind_id<=6",
     "plan": [
       "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
@@ -9067,21 +9050,6 @@
       "  └─IndexReader_11\t33967.00\t580132241.82\t33967\troot\t\ttime:649.4ms, loops:38, cop_task: {num: 2, max: 446.8ms, min: 201.7ms, avg: 324.3ms, p95: 446.8ms, max_proc_keys: 673908, p95_proc_keys: 673908, tot_proc: 642ms, rpc_num: 2, rpc_time: 648.5ms, copr_cache: disabled}\tindex:Selection_10, row_size: 48\t798.9 KB\tN/A",
       "    └─Selection_10\t33967.00\t576820439.32\t33967\tcop[tikv]\t\ttikv_task:{proc max:438ms, min:198ms, p80:438ms, p95:438ms, iters:972, tasks:2}, scan_detail: {total_process_keys: 985245, total_process_keys_size: 63055680, total_keys: 985253, rocksdb: {delete_skipped_count: 0, key_skipped_count: 985251, block: {cache_hit_count: 611, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.season_nr, 9), le(imdb.title.season_nr, 43), row_size: 48\tN/A\tN/A",
       "      └─IndexRangeScan_9\t985245.00\t547263089.32\t985245\tcop[tikv]\ttable:title, index:idx1(production_year, kind_id, season_nr)\ttikv_task:{proc max:418ms, min:194ms, p80:418ms, p95:418ms, iters:972, tasks:2}\trange:[1933,2001], keep order:false, row_size: 48\tN/A\tN/A"
-    ]
-  },
-  {
-    "query": "SELECT /*+ HASH_JOIN(t1, t2) */ * FROM imdb.title t1, imdb.title t2 WHERE t1.production_year = t2.production_year AND t1.episode_of_id>=1798234 AND t1.episode_of_id<=1846269 AND t1.episode_nr>=234 AND t1.episode_nr<=243 AND t2.production_year>=2013 AND t2.production_year<=2015",
-    "plan": [
-      "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
-      "IndexHashJoin_16\t0.00\t118201464.01\t0\troot\t\ttime:965.6ms, loops:1, \tinner join, inner:IndexLookUp_13, outer key:imdb.title.production_year, inner key:imdb.title.production_year, equal cond:eq(imdb.title.production_year, imdb.title.production_year), row_size: 820\t0 Bytes\tN/A",
-      "├─IndexLookUp_60(Build)\t0.00\t118201458.01\t0\troot\t\ttime:965.4ms, loops:1, index_task: {total_time: 362.4ms, fetch_handle: 50.2ms, build: 23.7µs, wait: 312.2ms}, table_task: {total_time: 918.7ms, num: 11, concurrency: 1}\tbatch_size: 20000, row_size: 198\t904 KB\tN/A",
-      "│ ├─IndexRangeScan_57(Build)\t65768.00\t34514569.67\t65768\tcop[tikv]\ttable:t1, index:idx_year(production_year)\ttime:46.5ms, loops:71, cop_task: {num: 1, max: 46.2ms, proc_keys: 65768, tot_proc: 41ms, tot_wait: 1ms, rpc_num: 1, rpc_time: 46.2ms, copr_cache: disabled}, tikv_task:{time:40ms, loops:69}, scan_detail: {total_process_keys: 65768, total_process_keys_size: 3025328, total_keys: 65769, rocksdb: {delete_skipped_count: 0, key_skipped_count: 65768, block: {cache_hit_count: 51, read_count: 0, read_byte: 0 Bytes}}}\trange:[2013,2015], keep order:false, row_size: 32\tN/A\tN/A",
-      "│ └─Selection_59(Probe)\t0.00\t49248674.30\t0\tcop[tikv]\t\ttime:882.1ms, loops:11, cop_task: {num: 26, max: 153.2ms, min: 1.85ms, avg: 33.5ms, p95: 113.8ms, max_proc_keys: 7631, p95_proc_keys: 7370, tot_proc: 784ms, tot_wait: 4ms, rpc_num: 26, rpc_time: 871.2ms, copr_cache: disabled}, tikv_task:{proc max:141ms, min:1ms, p80:48ms, p95:107ms, iters:162, tasks:26}, scan_detail: {total_process_keys: 65768, total_process_keys_size: 8286649, total_keys: 187118, rocksdb: {delete_skipped_count: 16570, key_skipped_count: 152745, block: {cache_hit_count: 174608, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.episode_nr, 234), ge(imdb.title.episode_of_id, 1798234), le(imdb.title.episode_nr, 243), le(imdb.title.episode_of_id, 1846269), row_size: 198\tN/A\tN/A",
-      "│   └─TableRowIDScan_58\t65768.00\t47275634.30\t65768\tcop[tikv]\ttable:t1\ttikv_task:{proc max:141ms, min:0s, p80:48ms, p95:107ms, iters:162, tasks:26}\tkeep order:false, row_size: 198\tN/A\tN/A",
-      "└─IndexLookUp_13(Probe)\t0.00\t26.00\t0\troot\t\t\tbatch_size: 20000, row_size: 198\tN/A\tN/A",
-      "  ├─Selection_12(Build)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.production_year, 2013), le(imdb.title.production_year, 2015), not(isnull(imdb.title.production_year)), row_size: 32\tN/A\tN/A",
-      "  │ └─IndexRangeScan_10\t0.00\t0.00\t0\tcop[tikv]\ttable:t2, index:idx_year(production_year)\t\trange: decided by [eq(imdb.title.production_year, imdb.title.production_year)], keep order:false, row_size: 32\tN/A\tN/A",
-      "  └─TableRowIDScan_11(Probe)\t0.00\t0.00\t0\tcop[tikv]\ttable:t2\t\tkeep order:false, row_size: 198\tN/A\tN/A"
     ]
   },
   {
@@ -10020,22 +9988,6 @@
     ]
   },
   {
-    "query": "SELECT /*+ HASH_JOIN(t1, t2) */ * FROM imdb.title t1, imdb.title t2 WHERE t1.production_year = t2.production_year AND t1.episode_of_id>=1634627 AND t1.episode_of_id<=1702045 AND t1.episode_nr>=67 AND t1.episode_nr<=80 AND t2.production_year>=1962 AND t2.production_year<=1965 AND t2.episode_nr>=401 AND t2.episode_nr<=414",
-    "plan": [
-      "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
-      "IndexHashJoin_17\t0.00\t80304684.49\t0\troot\t\ttime:772.9ms, loops:1, \tinner join, inner:IndexLookUp_14, outer key:imdb.title.production_year, inner key:imdb.title.production_year, equal cond:eq(imdb.title.production_year, imdb.title.production_year), row_size: 820\t0 Bytes\tN/A",
-      "├─IndexLookUp_64(Build)\t0.00\t80304678.49\t0\troot\t\ttime:772.7ms, loops:1, index_task: {total_time: 306.2ms, fetch_handle: 37.2ms, build: 43µs, wait: 268.9ms}, table_task: {total_time: 759.7ms, num: 10, concurrency: 1}\tbatch_size: 20000, row_size: 198\t724.5 KB\tN/A",
-      "│ ├─IndexRangeScan_61(Build)\t44682.00\t23448789.72\t44682\tcop[tikv]\ttable:t1, index:idx_year(production_year)\ttime:34.5ms, loops:51, cop_task: {num: 2, max: 21.7ms, min: 12.5ms, avg: 17.1ms, p95: 21.7ms, max_proc_keys: 30194, p95_proc_keys: 30194, tot_proc: 30ms, rpc_num: 2, rpc_time: 34.2ms, copr_cache: disabled}, tikv_task:{proc max:20ms, min:9ms, p80:20ms, p95:20ms, iters:53, tasks:2}, scan_detail: {total_process_keys: 44682, total_process_keys_size: 2055372, total_keys: 44684, rocksdb: {delete_skipped_count: 0, key_skipped_count: 44682, block: {cache_hit_count: 39, read_count: 0, read_byte: 0 Bytes}}}\trange:[1962,1965], keep order:false, row_size: 32\tN/A\tN/A",
-      "│ └─Selection_63(Probe)\t0.00\t33458965.84\t0\tcop[tikv]\t\ttime:735.3ms, loops:10, cop_task: {num: 39, max: 48.6ms, min: 1.54ms, avg: 18.6ms, p95: 41.8ms, max_proc_keys: 3432, p95_proc_keys: 3431, tot_proc: 630ms, tot_wait: 5ms, rpc_num: 39, rpc_time: 724ms, copr_cache: disabled}, tikv_task:{proc max:42ms, min:0s, p80:28ms, p95:37ms, iters:210, tasks:39}, scan_detail: {total_process_keys: 44682, total_process_keys_size: 5694095, total_keys: 128916, rocksdb: {delete_skipped_count: 9553, key_skipped_count: 99436, block: {cache_hit_count: 139635, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.episode_nr, 67), ge(imdb.title.episode_of_id, 1634627), le(imdb.title.episode_nr, 80), le(imdb.title.episode_of_id, 1702045), row_size: 198\tN/A\tN/A",
-      "│   └─TableRowIDScan_62\t44682.00\t32118505.84\t44682\tcop[tikv]\ttable:t1\ttikv_task:{proc max:42ms, min:0s, p80:28ms, p95:37ms, iters:210, tasks:39}\tkeep order:false, row_size: 198\tN/A\tN/A",
-      "└─IndexLookUp_14(Probe)\t0.00\t26.00\t0\troot\t\t\tbatch_size: 20000, row_size: 198\tN/A\tN/A",
-      "  ├─Selection_12(Build)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.production_year, 1962), le(imdb.title.production_year, 1965), not(isnull(imdb.title.production_year)), row_size: 32\tN/A\tN/A",
-      "  │ └─IndexRangeScan_10\t0.00\t0.00\t0\tcop[tikv]\ttable:t2, index:idx_year(production_year)\t\trange: decided by [eq(imdb.title.production_year, imdb.title.production_year)], keep order:false, row_size: 32\tN/A\tN/A",
-      "  └─Selection_13(Probe)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.episode_nr, 401), le(imdb.title.episode_nr, 414), row_size: 198\tN/A\tN/A",
-      "    └─TableRowIDScan_11\t0.00\t0.00\t0\tcop[tikv]\ttable:t2\t\tkeep order:false, row_size: 198\tN/A\tN/A"
-    ]
-  },
-  {
     "query": "SELECT production_year FROM imdb.title USE INDEX(idx1) WHERE production_year>=1905 AND production_year<=2003 AND kind_id>=0 AND kind_id<=6 AND season_nr>=0 AND season_nr<=57",
     "plan": [
       "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
@@ -10215,22 +10167,6 @@
       "  └─IndexReader_11\t1007287.00\t1578433227.38\t1007287\troot\t\ttime:1.85s, loops:1023, cop_task: {num: 3, max: 728.8ms, min: 490.7ms, avg: 615.6ms, p95: 728.8ms, max_proc_keys: 925477, p95_proc_keys: 925477, tot_proc: 1.77s, rpc_num: 3, rpc_time: 1.85s, copr_cache: disabled}\tindex:Selection_10, row_size: 48\t18.0 MB\tN/A",
       "    └─Selection_10\t1007287.00\t1480222724.88\t1007287\tcop[tikv]\t\ttikv_task:{proc max:633ms, min:449ms, p80:633ms, p95:633ms, iters:2482, tasks:3}, scan_detail: {total_process_keys: 2528312, total_process_keys_size: 161811968, total_keys: 2528323, rocksdb: {delete_skipped_count: 0, key_skipped_count: 2528320, block: {cache_hit_count: 1546, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.kind_id, 0), le(imdb.title.kind_id, 5), row_size: 48\tN/A\tN/A",
       "      └─IndexFullScan_9\t2528312.00\t1404373364.88\t2528312\tcop[tikv]\ttable:title, index:idx1(production_year, kind_id, season_nr)\ttikv_task:{proc max:583ms, min:426ms, p80:583ms, p95:583ms, iters:2482, tasks:3}\tkeep order:false, row_size: 48\tN/A\tN/A"
-    ]
-  },
-  {
-    "query": "SELECT /*+ HASH_JOIN(t1, t2) */ * FROM imdb.title t1, imdb.title t2 WHERE t1.production_year = t2.production_year AND t1.episode_of_id>=2002581 AND t1.episode_of_id<=2074212 AND t1.episode_nr>=289 AND t1.episode_nr<=303 AND t2.production_year>=1916 AND t2.production_year<=1919 AND t2.episode_nr>=176 AND t2.episode_nr<=190",
-    "plan": [
-      "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
-      "IndexHashJoin_17\t0.00\t30642712.29\t0\troot\t\ttime:417.4ms, loops:1, \tinner join, inner:IndexLookUp_14, outer key:imdb.title.production_year, inner key:imdb.title.production_year, equal cond:eq(imdb.title.production_year, imdb.title.production_year), row_size: 820\t0 Bytes\tN/A",
-      "├─IndexLookUp_64(Build)\t0.00\t30642706.29\t0\troot\t\ttime:417.1ms, loops:1, index_task: {total_time: 213ms, fetch_handle: 21.9ms, build: 24.4µs, wait: 191.1ms}, table_task: {total_time: 396ms, num: 9, concurrency: 1}\tbatch_size: 20000, row_size: 198\t331.9 KB\tN/A",
-      "│ ├─IndexRangeScan_61(Build)\t17114.00\t8981303.15\t17114\tcop[tikv]\ttable:t1, index:idx_year(production_year)\ttime:20.9ms, loops:23, cop_task: {num: 1, max: 20.7ms, proc_keys: 17114, tot_proc: 19ms, rpc_num: 1, rpc_time: 20.6ms, copr_cache: disabled}, tikv_task:{time:19ms, loops:21}, scan_detail: {total_process_keys: 17114, total_process_keys_size: 787244, total_keys: 17115, rocksdb: {delete_skipped_count: 0, key_skipped_count: 17114, block: {cache_hit_count: 9, read_count: 11, read_byte: 140.7 KB}}}\trange:[1916,1919], keep order:false, row_size: 32\tN/A\tN/A",
-      "│ └─Selection_63(Probe)\t0.00\t12815378.48\t0\tcop[tikv]\t\ttime:384.8ms, loops:9, cop_task: {num: 19, max: 66.4ms, min: 1ms, avg: 20ms, p95: 66.4ms, max_proc_keys: 3071, p95_proc_keys: 3071, tot_proc: 324ms, tot_wait: 5ms, rpc_num: 19, rpc_time: 378.7ms, copr_cache: disabled}, tikv_task:{proc max:59ms, min:1ms, p80:30ms, p95:59ms, iters:90, tasks:19}, scan_detail: {total_process_keys: 17114, total_process_keys_size: 2193573, total_keys: 52124, rocksdb: {delete_skipped_count: 40, key_skipped_count: 36106, block: {cache_hit_count: 70501, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.episode_nr, 289), ge(imdb.title.episode_of_id, 2002581), le(imdb.title.episode_nr, 303), le(imdb.title.episode_of_id, 2074212), row_size: 198\tN/A\tN/A",
-      "│   └─TableRowIDScan_62\t17114.00\t12301958.48\t17114\tcop[tikv]\ttable:t1\ttikv_task:{proc max:57ms, min:1ms, p80:28ms, p95:57ms, iters:90, tasks:19}\tkeep order:false, row_size: 198\tN/A\tN/A",
-      "└─IndexLookUp_14(Probe)\t0.00\t26.00\t0\troot\t\t\tbatch_size: 20000, row_size: 198\tN/A\tN/A",
-      "  ├─Selection_12(Build)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.production_year, 1916), le(imdb.title.production_year, 1919), not(isnull(imdb.title.production_year)), row_size: 32\tN/A\tN/A",
-      "  │ └─IndexRangeScan_10\t0.00\t0.00\t0\tcop[tikv]\ttable:t2, index:idx_year(production_year)\t\trange: decided by [eq(imdb.title.production_year, imdb.title.production_year)], keep order:false, row_size: 32\tN/A\tN/A",
-      "  └─Selection_13(Probe)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.episode_nr, 176), le(imdb.title.episode_nr, 190), row_size: 198\tN/A\tN/A",
-      "    └─TableRowIDScan_11\t0.00\t0.00\t0\tcop[tikv]\ttable:t2\t\tkeep order:false, row_size: 198\tN/A\tN/A"
     ]
   },
   {
@@ -10699,23 +10635,6 @@
       "  └─IndexReader_11\t1019812.00\t1579654414.88\t1019812\troot\t\ttime:1.87s, loops:1030, cop_task: {num: 3, max: 742.7ms, min: 479.2ms, avg: 623.2ms, p95: 742.7ms, max_proc_keys: 925477, p95_proc_keys: 925477, tot_proc: 1.8s, rpc_num: 3, rpc_time: 1.87s, copr_cache: disabled}\tindex:Selection_10, row_size: 48\t18.3 MB\tN/A",
       "    └─Selection_10\t1019812.00\t1480222724.88\t1019812\tcop[tikv]\t\ttikv_task:{proc max:652ms, min:445ms, p80:652ms, p95:652ms, iters:2482, tasks:3}, scan_detail: {total_process_keys: 2528312, total_process_keys_size: 161811968, total_keys: 2528323, rocksdb: {delete_skipped_count: 0, key_skipped_count: 2528320, block: {cache_hit_count: 1546, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.kind_id, 0), le(imdb.title.kind_id, 6), row_size: 48\tN/A\tN/A",
       "      └─IndexFullScan_9\t2528312.00\t1404373364.88\t2528312\tcop[tikv]\ttable:title, index:idx1(production_year, kind_id, season_nr)\ttikv_task:{proc max:599ms, min:415ms, p80:599ms, p95:599ms, iters:2482, tasks:3}\tkeep order:false, row_size: 48\tN/A\tN/A"
-    ]
-  },
-  {
-    "query": "SELECT /*+ HASH_JOIN(t1, t2) */ * FROM imdb.title t1, imdb.title t2 WHERE t1.production_year = t2.production_year AND t1.production_year>=1947 AND t1.production_year<=1950 AND t1.episode_nr>=142 AND t1.episode_nr<=157 AND t2.episode_of_id>=2435991 AND t2.episode_of_id<=2516050 AND t2.episode_nr>=200 AND t2.episode_nr<=215",
-    "plan": [
-      "id\testRows\testCost\tactRows\ttask\taccess object\texecution info\toperator info\tmemory\tdisk",
-      "Projection_9\t0.00\t23943891.27\t0\troot\t\ttime:351.3ms, loops:1, Concurrency:OFF\timdb.title.id, imdb.title.title, imdb.title.imdb_index, imdb.title.kind_id, imdb.title.production_year, imdb.title.imdb_id, imdb.title.phonetic_code, imdb.title.episode_of_id, imdb.title.season_nr, imdb.title.episode_nr, imdb.title.series_years, imdb.title.md5sum, imdb.title.id, imdb.title.title, imdb.title.imdb_index, imdb.title.kind_id, imdb.title.production_year, imdb.title.imdb_id, imdb.title.phonetic_code, imdb.title.episode_of_id, imdb.title.season_nr, imdb.title.episode_nr, imdb.title.series_years, imdb.title.md5sum, row_size: 820\t11.4 KB\tN/A",
-      "└─IndexHashJoin_19\t0.00\t23943885.27\t0\troot\t\ttime:351.3ms, loops:1, \tinner join, inner:IndexLookUp_16, outer key:imdb.title.production_year, inner key:imdb.title.production_year, equal cond:eq(imdb.title.production_year, imdb.title.production_year), row_size: 820\t0 Bytes\tN/A",
-      "  ├─IndexLookUp_66(Build)\t0.00\t23943879.27\t0\troot\t\ttime:351ms, loops:1, index_task: {total_time: 126.2ms, fetch_handle: 11.2ms, build: 16.2µs, wait: 114.9ms}, table_task: {total_time: 340.3ms, num: 8, concurrency: 1}\tbatch_size: 20000, row_size: 198\t242.7 KB\tN/A",
-      "  │ ├─IndexRangeScan_63(Build)\t13451.00\t7058987.30\t13451\tcop[tikv]\ttable:t2, index:idx_year(production_year)\ttime:10.5ms, loops:20, cop_task: {num: 1, max: 10.3ms, proc_keys: 13451, tot_proc: 8ms, rpc_num: 1, rpc_time: 10.3ms, copr_cache: disabled}, tikv_task:{time:8ms, loops:18}, scan_detail: {total_process_keys: 13451, total_process_keys_size: 618746, total_keys: 13452, rocksdb: {delete_skipped_count: 0, key_skipped_count: 13451, block: {cache_hit_count: 19, read_count: 0, read_byte: 0 Bytes}}}\trange:[1947,1950], keep order:false, row_size: 32\tN/A\tN/A",
-      "  │ └─Selection_65(Probe)\t0.00\t10072435.20\t0\tcop[tikv]\t\ttime:332.3ms, loops:8, cop_task: {num: 40, max: 30.7ms, min: 1.11ms, avg: 8.17ms, p95: 27.4ms, max_proc_keys: 1278, p95_proc_keys: 1251, tot_proc: 276ms, tot_wait: 4ms, rpc_num: 40, rpc_time: 326ms, copr_cache: disabled}, tikv_task:{proc max:28ms, min:0s, p80:12ms, p95:26ms, iters:135, tasks:40}, scan_detail: {total_process_keys: 13451, total_process_keys_size: 1699017, total_keys: 33460, rocksdb: {delete_skipped_count: 7511, key_skipped_count: 22864, block: {cache_hit_count: 62395, read_count: 0, read_byte: 0 Bytes}}}\tge(imdb.title.episode_nr, 200), ge(imdb.title.episode_of_id, 2435991), le(imdb.title.episode_nr, 215), le(imdb.title.episode_of_id, 2516050), row_size: 198\tN/A\tN/A",
-      "  │   └─TableRowIDScan_64\t13451.00\t9668905.20\t13451\tcop[tikv]\ttable:t2\ttikv_task:{proc max:28ms, min:0s, p80:12ms, p95:25ms, iters:135, tasks:40}\tkeep order:false, row_size: 198\tN/A\tN/A",
-      "  └─IndexLookUp_16(Probe)\t0.00\t26.00\t0\troot\t\t\tbatch_size: 20000, row_size: 198\tN/A\tN/A",
-      "    ├─Selection_14(Build)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.production_year, 1947), le(imdb.title.production_year, 1950), not(isnull(imdb.title.production_year)), row_size: 32\tN/A\tN/A",
-      "    │ └─IndexRangeScan_12\t0.00\t0.00\t0\tcop[tikv]\ttable:t1, index:idx_year(production_year)\t\trange: decided by [eq(imdb.title.production_year, imdb.title.production_year)], keep order:false, row_size: 32\tN/A\tN/A",
-      "    └─Selection_15(Probe)\t0.00\t0.00\t0\tcop[tikv]\t\t\tge(imdb.title.episode_nr, 142), le(imdb.title.episode_nr, 157), row_size: 198\tN/A\tN/A",
-      "      └─TableRowIDScan_13\t0.00\t0.00\t0\tcop[tikv]\ttable:t1\t\tkeep order:false, row_size: 198\tN/A\tN/A"
     ]
   },
   {
