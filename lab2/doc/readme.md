@@ -139,3 +139,15 @@ lab2 使用 TiDB 校准前的 cost model 作为 baseline，完成所有代码后
 ![eval](eval.png)
 
 同时会产生一个 `/eval/results.json` 文件，请提交这个文件，classroom 会根据这个文件做一个简单的打分。
+
+## Preparation for lab3
+
+Lab3 需要在 TiDB 的基础上做少量的开发，因此需要准备一下下面的环境。
+
+TiDB 由 Golang 开发，因此需要提前准备好 Golang 的开发环境；Golang 环境的安装可见 [tidb-dev-guide/install-golang](https://pingcap.github.io/tidb-dev-guide/get-started/install-golang.html)。
+
+本次 TiDB 中的 Golang 开发相对简单，不需要提前对 Golang 进行单独深入的学习，如果感兴趣或者在完成 Lab3 时有 Golang 相关的问题，可参考 [go-by-example](https://gobyexample-cn.github.io/)。
+
+安装好 Golang 后，TiDB 的编译、运行可参考 [tidb-dev-guide/build-tidb-from-source](https://pingcap.github.io/tidb-dev-guide/get-started/build-tidb-from-source.html)。
+
+如果有需要，可以安装 GoLand 作为你的 IDE，可参考 [tidb-dev-guide/setup-an-ide](https://pingcap.github.io/tidb-dev-guide/get-started/setup-an-ide.html)。
