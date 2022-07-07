@@ -4,7 +4,7 @@ def estimate_plan(operator, factors, weights):
         cost += estimate_plan(child, factors, weights)
 
     if operator.is_hash_agg():
-        # YOUR CODE HERE: design your cost formula for HashAgg
+        # YOUR CODE HERE: hash_agg_cost = input_row_cnt * cpu_fac
         pass
 
     elif operator.is_hash_join():
@@ -18,31 +18,31 @@ def estimate_plan(operator, factors, weights):
         weights['cpu'] += (build_row_cnt + output_row_cnt)
 
     elif operator.is_sort():
-        # YOUR CODE HERE: design your cost formula for Sort
+        # YOUR CODE HERE: sort_cost = input_row_cnt * log(input_row_cnt) * cpu_fac
         pass
 
     elif operator.is_selection():
-        # YOUR CODE HERE: design your cost formula for Selection
+        # YOUR CODE HERE: selection_cost = input_row_cnt * cpu_fac
         pass
 
     elif operator.is_projection():
-        # YOUR CODE HERE: design your cost formula for Projection
+        # YOUR CODE HERE: projection_cost = input_row_cnt * cpu_fac
         pass
 
     elif operator.is_table_reader():
-        # YOUR CODE HERE: design your cost formula for TableReader
+        # YOUR CODE HERE: table_reader_cost = input_row_cnt * input_row_size * net_fac
         pass
 
     elif operator.is_table_scan():
-        # YOUR CODE HERE: design your cost formula for TableScan
+        # YOUR CODE HERE: table_scan_cost = row_cnt * row_size * scan_fac
         pass
 
     elif operator.is_index_reader():
-        # YOUR CODE HERE: design your cost formula for IndexReader
+        # YOUR CODE HERE: index_reader_cost = input_row_cnt * input_row_size * net_fac
         pass
 
     elif operator.is_index_scan():
-        # YOUR CODE HERE: design your cost formula for IndexScan
+        # YOUR CODE HERE: index_scan_cost = row_cnt * row_size * scan_fac
         pass
 
     elif operator.is_index_lookup():
