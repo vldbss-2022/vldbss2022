@@ -21,7 +21,7 @@ Besides, there are several heuristic methods which use information from single c
 - Exponential BackOff (EBO): When columns have correlated values, AVI could cause significant underestimations. EBO calculates the combined selectivity by using only 4 most selective predicates with diminishing impact. The combined selectivity fraction is given by `s_{1} x s_{2}^{1/2} x s_{3}^{1/4} x s_{4}^{1/8}` where `s_{k}` represents k-th most selective fraction across all predicates.
 - Minimum Selectivity (MinSel): It calculates the combined selectivity as the minimum selectivity across individual predicates. 
 
-For a given conjunction of predicates, the combined actual selectivity depends on the degree of correlation among the predicates. AVI would produce good estimates if the predicates have no correlation while MinSel represents the other extreme compared to AVI. EBO is expected to capture some intermediate scenarios between complete independenceand full correlation. We add the estimated produced by the three heuristic methods into the features of the regression model:
+For a given conjunction of predicates, the combined actual selectivity depends on the degree of correlation among the predicates. AVI would produce good estimates if the predicates have no correlation while MinSel represents the other extreme compared to AVI. EBO is expected to capture some intermediate scenarios between complete independence and full correlation. We add the estimated produced by the three heuristic methods into the features of the regression model:
 ```
 [l1, r1, l2, r2, ..., ln, rn, est_avi, est_ebo, est_min_sel]
 ```
