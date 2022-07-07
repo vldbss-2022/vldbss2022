@@ -114,7 +114,7 @@ mysql> explain analyze SELECT production_year FROM imdb.title USE INDEX(idx1) WH
 4 rows in set (0.07 sec)
 ```
 
-为了简单，在 lab2 的实验数据中只会出现 HashAgg, HashJoin, Sort, Selection, Projection, TableReader, TableScan(包含 TableRangeScan 和 TableFullScan), IndexReader, IndexScan(包含 IndexRangeScan 和 IndexFullScan), IndexLookup, TableRowIDScan 这些算子。
+为了简单，在 lab2 的实验数据中只会出现 HashAgg, HashJoin, Sort, Selection, Projection, TableReader, TableScan(包含 TableRangeScan, TableFullScan 和 TableRowIDScan), IndexReader, IndexScan(包含 IndexRangeScan 和 IndexFullScan), IndexLookup 这些算子。
 
 在生成 LAB2 的实验数据时，关闭了并发和 Cache，所以设计算子代价公式时只需要考虑算子本身的执行逻辑即可；如为 Projection 设计代价公式时，你可以设计为 `input_rows * cpu_factor` 而不用为 `(input_rows * cpu_factor) / concurrency`。
 
