@@ -19,6 +19,8 @@ You need to fill some missing code in order to complete these labs.
 
 The details of classroom usage can be found in the [classroom doc](docs/classroom.md).
 
+The Assignment link is [vldbss2022-labs](https://classroom.github.com/a/6StbajGD)
+
 If you don't use [GitHub classroom](https://classroom.github.com/), just fork this repo, work in your repo, you will not have a score.
 
 ### Getting started
