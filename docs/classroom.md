@@ -19,7 +19,7 @@ Autograding is a workflow which can automatically run test cases. However there 
 When you have completed the course assignments and have obtained the results, type the following command on the command line:
 
 ```sh
-git add .github
+git add .
 git commit -m "complete the labx"
 git push
 ```
