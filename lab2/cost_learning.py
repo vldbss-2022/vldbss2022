@@ -20,7 +20,7 @@ operators = ["Projection", "Selection", "Sort", "HashAgg", "HashJoin", "TableSca
 #              /         \
 #          IndexScan_3   IndexScan_4
 #    For example, we can concatenate the node features of the above plan as follows:
-#    [Feat(HashJoin_1)], [Feat(IndexJoin_2)], [Feat(IndexScan_3)], [Feat(IndexScan_4)], [Padding], [Feat(TableScan_6)], [Padding]
+#    [Feat(HashJoin_1)], [Feat(IndexJoin_2)], [Feat(IndexScan_3)], [Padding], [Feat(IndexScan_4)], [Padding], [Padding], [Feat(TableScan_6)], [Padding], [Padding]
 #    Notice1: When we traverse all the children in DFS, we insert [Padding] as the end of the children. In this way, we
 #    have an one-on-one mapping between the plan tree and the DFS order sequence.
 #    Notice2: Since the different plans have the different number of nodes, we need padding to make the lengths of the
