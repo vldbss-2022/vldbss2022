@@ -1,5 +1,6 @@
 import torch
 from data_loader import load_dictionary, load_numeric_min_max, load_plans_and_obtain_bounds, prepare_imdb_dataset_for_encoding, prepare_imdb_dataset_for_extraction, load_imdb_dataset
+import os
 from os import path
 from util import EncodeContext
 
@@ -44,7 +45,9 @@ def encode_plan():
     ctx = EncodeContext(data, word_vectors, min_max_values, tables_id, columns_id, indexes_id, physical_ops_id,
                         compare_ops_id, bool_ops_id, plan_node_max_num, condition_max_num, cost_label_min,
                         cost_label_max, card_label_min, card_label_max)
-    encode_and_save_job_plans(ctx, plans, batch_size=64, out_dir=path.join('data', 'job'))
+    out_dir = path.join('data', 'job')
+    os.makedirs(out_dir, exist_ok=True)
+    encode_and_save_job_plans(ctx, plans, batch_size=64, out_dir=out_dir)
     print('data encoded')
 
 
