@@ -99,7 +99,7 @@ class Representation(nn.Module):
         mapping = mapping.long()
         for idx in reversed(range(0, num_level - 1)):
             # YOUR CODE HERE: select indexes of left/right children
-            # calculate mapp_left/mapp_right here.
+            # calculate mapp_left/mapp_right from mapping.
 
             pad = torch.zeros_like(hid)[:, 0].unsqueeze(1)
             next_hid = torch.cat((pad, hid), 1)
@@ -110,7 +110,10 @@ class Representation(nn.Module):
             hid_right = torch.index_select(next_hid, 1, mapp_right) # hidden states of right children
             cid_right = torch.index_select(next_cid, 1, mapp_right) # cell states of right children
             # YOUR CODE HERE: calculate hid and cid of this level
-
+            # 1. calculate hid(cid) by averaging hid_left(cid_left) and hid_right(cid_right)
+            # 2. get input of this level
+            # 3. feed input of this level and states(hid and cid) to self.lstm2 to get new states
+            # You can check line 97-98 when implementing 2 and 3.
         output = hid[0]
         # print (output.size())
         # torch.Size([133, 128])
