@@ -90,9 +90,19 @@ def eval():
 
 
 if __name__ == '__main__':
+    # Extract features from plans and add sample bitmaps.
+    # plans.json -> plans_seq.json -> plans_seq_sample.json
     extract_feature()
-    encode_plan() # 1600 queries, 25 batches
+    # Encode plan features and dump them into disk in batches.
+    # There are 1600 plans and batch_size = 64, so there are 1600 / 64 = 25 batches.
+    # Inputs and outputs of each batch are written into files in data/job directory as follows:
+    # target_cost_xxx.np, target_cardinality_xxx.np, operators_xxx.np, extra_infos_xxx.np,
+    # condition1s_xxx.np, condition2s_xxx.np, samples_xxx.np, condition_masks_xxx.np, mapping_xxx.np
+    # We read inputs and outputs of each batch when training, validating and testing the model.
+    encode_plan()
+    # Use batch 0-19 for train and 20-21 for validation. After finish training, save the model.
     train()
+    # Load the model and use batch 22-24 for evaluation. It generates cardinality.png, cost.png and results.json.
     eval()
 
 
