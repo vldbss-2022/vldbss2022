@@ -30,8 +30,8 @@ def encode_plan():
     data, tables_id, columns_id, indexes_id, physical_ops_id, compare_ops_id, bool_ops_id = prepare_imdb_dataset_for_encoding(data_dir)
     print('data prepared')
     # YOUR CODE HERE: set the word_vectros_path which is used to encoding strings or just put wordvectors_updated.kv and
-    # wordvectors_updated.kv.vectors.npy under data/job directory.
-    word_vectors_path = 'data/job/wordvectors_updated.kv'
+    # wordvectors_updated.kv.vectors.npy under data directory.
+    word_vectors_path = 'data/wordvectors_updated.kv'
     word_vectors = load_dictionary(word_vectors_path)
     print('word_vectors loaded')
     min_max_values = load_numeric_min_max(path.join(data_dir, 'min_max_vals.json'))
