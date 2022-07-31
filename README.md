@@ -23,6 +23,8 @@ The Assignment link is 'https://classroom.github.com/a/6StbajGD'
 
 If you don't use [GitHub classroom](https://classroom.github.com/), just fork this repo, work in your repo, you will not have a score.
 
+The course only grades lab1-3, but lab4 will also be automatically evaluated when you push to your repo.
+
 ### Getting started
 
 First, please study the[classroom doc](docs/classroom.md) and clone the repository with git to get the source code of the project.
