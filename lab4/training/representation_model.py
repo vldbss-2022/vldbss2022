@@ -52,14 +52,37 @@ class Representation(nn.Module):
                 break
         # print(f'batch_size:{batch_size}')
 
+        # embedding layer
+
+        # condition1
         num_level = condition1s.size()[0]
         num_node_per_level = condition1s.size()[1]
         num_condition_per_node = condition1s.size()[2]
         condition_op_length = condition1s.size()[3]
 
-        # embedding layer
-        # YOUR CODE HERE: finish the embedding layer
-        # calculate condition_embedding from condition1s and condition2s
+        inputs = condition1s.view(num_level * num_node_per_level, num_condition_per_node, condition_op_length)
+        hidden = self.init_hidden(self.hidden_dim, num_level * num_node_per_level)
+
+        out, hid = self.lstm1(inputs, hidden)
+        last_output1 = hid[0].view(num_level * num_node_per_level, -1)
+
+        # condition2
+        num_level = condition2s.size()[0]
+        num_node_per_level = condition2s.size()[1]
+        num_condition_per_node = condition2s.size()[2]
+        condition_op_length = condition2s.size()[3]
+
+        inputs = condition2s.view(num_level * num_node_per_level, num_condition_per_node, condition_op_length)
+        hidden = self.init_hidden(self.hidden_dim, num_level * num_node_per_level)
+
+        out, hid = self.lstm1(inputs, hidden)
+        last_output2 = hid[0].view(num_level * num_node_per_level, -1)
+
+        last_output1 = F.relu(self.condition_mlp(last_output1))
+        last_output2 = F.relu(self.condition_mlp(last_output2))
+        last_output = (last_output1 + last_output2) / 2
+        condition_embedding = self.batch_norm1(last_output).view(num_level, num_node_per_level, -1)
+
 
         sample_output = F.relu(self.sample_mlp(samples))
         sample_output = sample_output * condition_masks
@@ -76,7 +99,7 @@ class Representation(nn.Module):
         mapping = mapping.long()
         for idx in reversed(range(0, num_level - 1)):
             # YOUR CODE HERE: select indexes of left/right children
-            # calculate mapp_left/mapp_right here.
+            # calculate mapp_left/mapp_right from mapping.
 
             pad = torch.zeros_like(hid)[:, 0].unsqueeze(1)
             next_hid = torch.cat((pad, hid), 1)
@@ -87,7 +110,10 @@ class Representation(nn.Module):
             hid_right = torch.index_select(next_hid, 1, mapp_right) # hidden states of right children
             cid_right = torch.index_select(next_cid, 1, mapp_right) # cell states of right children
             # YOUR CODE HERE: calculate hid and cid of this level
-
+            # 1. calculate hid(cid) by averaging hid_left(cid_left) and hid_right(cid_right)
+            # 2. get input of this level
+            # 3. feed input of this level and states(hid and cid) to self.lstm2 to get new states
+            # You can check line 97-98 when implementing 2 and 3.
         output = hid[0]
         # print (output.size())
         # torch.Size([133, 128])

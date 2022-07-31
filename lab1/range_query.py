@@ -12,7 +12,7 @@ class ParsedRangeQuery:
         """
         if col_name not in self.col_left:
             return min_val, max_val
-        return self.col_left[col_name]+1, self.col_right[col_name] # [left, right)
+        return self.col_left[col_name], self.col_right[col_name]
 
     def column_names(self):
         """

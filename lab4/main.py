@@ -1,5 +1,6 @@
 import torch
 from data_loader import load_dictionary, load_numeric_min_max, load_plans_and_obtain_bounds, prepare_imdb_dataset_for_encoding, prepare_imdb_dataset_for_extraction, load_imdb_dataset
+import os
 from os import path
 from util import EncodeContext
 
@@ -30,8 +31,8 @@ def encode_plan():
     data, tables_id, columns_id, indexes_id, physical_ops_id, compare_ops_id, bool_ops_id = prepare_imdb_dataset_for_encoding(data_dir)
     print('data prepared')
     # YOUR CODE HERE: set the word_vectros_path which is used to encoding strings or just put wordvectors_updated.kv and
-    # wordvectors_updated.kv.vectors.npy under data/job directory.
-    word_vectors_path = 'data/job/wordvectors_updated.kv'
+    # wordvectors_updated.kv.vectors.npy under data directory.
+    word_vectors_path = 'data/wordvectors_updated.kv'
     word_vectors = load_dictionary(word_vectors_path)
     print('word_vectors loaded')
     min_max_values = load_numeric_min_max(path.join(data_dir, 'min_max_vals.json'))
@@ -44,7 +45,9 @@ def encode_plan():
     ctx = EncodeContext(data, word_vectors, min_max_values, tables_id, columns_id, indexes_id, physical_ops_id,
                         compare_ops_id, bool_ops_id, plan_node_max_num, condition_max_num, cost_label_min,
                         cost_label_max, card_label_min, card_label_max)
-    encode_and_save_job_plans(ctx, plans, batch_size=64, out_dir=path.join('data', 'job'))
+    out_dir = path.join('data', 'job')
+    os.makedirs(out_dir, exist_ok=True)
+    encode_and_save_job_plans(ctx, plans, batch_size=64, out_dir=out_dir)
     print('data encoded')
 
 
@@ -87,9 +90,19 @@ def eval():
 
 
 if __name__ == '__main__':
+    # Extract features from plans and add sample bitmaps.
+    # plans.json -> plans_seq.json -> plans_seq_sample.json
     extract_feature()
-    encode_plan() # 1600 queries, 25 batches
+    # Encode plan features and dump them into disk in batches.
+    # There are 1600 plans and batch_size = 64, so there are 1600 / 64 = 25 batches.
+    # Inputs and outputs of each batch are written into files in data/job directory as follows:
+    # target_cost_xxx.np, target_cardinality_xxx.np, operators_xxx.np, extra_infos_xxx.np,
+    # condition1s_xxx.np, condition2s_xxx.np, samples_xxx.np, condition_masks_xxx.np, mapping_xxx.np
+    # We read inputs and outputs of each batch when training, validating and testing the model.
+    encode_plan()
+    # Use batch 0-19 for train and 20-21 for validation. After finish training, save the model.
     train()
+    # Load the model and use batch 22-24 for evaluation. It generates cardinality.png, cost.png and results.json.
     eval()
 
 

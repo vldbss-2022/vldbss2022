@@ -41,7 +41,7 @@ def preprocess_queries(queris, table_stats, columns):
 class QueryDataset(torch.utils.data.Dataset):
     def __init__(self, queries, table_stats, columns):
         super().__init__()
-        self.query_data = list(zip(preprocess_queries(queries, table_stats, columns)))
+        self.query_data = list(zip(*preprocess_queries(queries, table_stats, columns)))
 
     def __getitem__(self, index):
         return self.query_data[index]
